@@ -1,0 +1,25 @@
+@use "tailwindcss";
+@use "styles/index";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: clip;
+  background-color: #f3f1e8;
+}
+
+body {
+  background-image: url("/assets/websiteBG.webp");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  font-family: var(--font-coming-soon), "Comic Neue", cursive;
+}

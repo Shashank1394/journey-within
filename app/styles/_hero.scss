@@ -1,0 +1,219 @@
+.hero {
+  position: relative;
+  overflow: visible;
+  padding: 1.1rem 0.9rem 0;
+  color: #141414;
+  isolation: isolate;
+
+  .title,
+  .intro,
+  .copy,
+  .kicker,
+  .headline,
+  .bubble {
+    position: relative;
+    z-index: 3;
+  }
+
+  .title {
+    margin: 0;
+    font-family: "Roca", "Times New Roman", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #f6c900;
+    text-shadow: 2px 2px 0 #000;
+  }
+
+  .intro,
+  .copy,
+  .kicker,
+  .mission {
+    font-family: var(--font-coming-soon), "Comic Neue", cursive;
+    font-weight: 700;
+  }
+
+  .intro {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin: 1.2rem auto 0;
+    text-align: center;
+    max-width: 320px;
+  }
+
+  .copy {
+    font-size: 0.82rem;
+    line-height: 1.35;
+    margin-top: 0.85rem;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 300px;
+    text-align: right;
+  }
+
+  .copy.accent {
+    max-width: 200px;
+    font-size: 0.85rem;
+    margin-top: 0.7rem;
+  }
+
+  .kicker {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: 0.5rem;
+    text-align: right;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .headline {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    font-family: "Roca", "Times New Roman", serif;
+    font-size: 1.8rem;
+    line-height: 0.1;
+    color: #f6c900;
+    text-shadow: 2px 2px 0 #000;
+  }
+
+  .bubble {
+    width: min(290px, 100%);
+    margin: 3.5rem 0 0 auto;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .mission {
+    margin: 0;
+    text-align: center;
+    font-size: 0.78rem;
+    line-height: 1.55;
+  }
+
+  .map {
+    position: absolute;
+    left: -4.5rem;
+    top: 7.5rem;
+    width: 350px;
+    margin: 0;
+    aspect-ratio: 800 / 926;
+    background-image: url("/assets/hero-map-collage.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left bottom;
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 2rem 2.5rem 10rem;
+
+    .title {
+      font-size: 3rem;
+    }
+
+    .intro {
+      max-width: 570px;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    .copy {
+      max-width: 485px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .copy.accent {
+      max-width: 260px;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    .kicker {
+      margin-top: 6rem;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      line-height: 2;
+    }
+
+    .headline {
+      font-size: 2.6rem;
+      margin-right: 0;
+    }
+
+    .bubble {
+      width: 420px;
+      padding: 1.25rem 2rem;
+      margin-top: 2rem;
+    }
+
+    .mission {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .map {
+      width: 560px;
+      left: -7rem;
+      top: 6rem;
+
+      background-size: contain;
+      background-position: left bottom;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-bottom: 13rem;
+
+    .title {
+      font-size: 4rem;
+    }
+
+    .intro {
+      max-width: 710px;
+      font-size: 1.5rem;
+    }
+
+    .copy {
+      max-width: 710px;
+      font-size: 1.3rem;
+    }
+
+    .copy.accent {
+      max-width: 375px;
+      font-size: 1.3rem;
+    }
+
+    .kicker {
+      margin-top: 12rem;
+      margin-right: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .headline {
+      font-size: 3.5rem;
+    }
+
+    .bubble {
+      width: 500px;
+      padding: 1.75rem 2.5rem;
+    }
+
+    .mission {
+      font-size: 1.2rem;
+    }
+
+    .map {
+      width: 760px;
+      left: -9rem;
+      top: 5rem;
+    }
+  }
+}
