@@ -1,0 +1,78 @@
+.about-section {
+  position: relative;
+  padding: 3rem 0;
+
+  .about {
+    min-height: 280px;
+  }
+
+  .title {
+    margin: 0 0 2rem;
+
+    font-family: "Roca", "Times New Roman", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+
+    color: #f6c400;
+
+    text-shadow:
+      3px 3px 0 #000,
+      0 0 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .intro {
+    max-width: 900px;
+    margin: 0 auto;
+
+    font-family: var(--font-coming-soon), "Comic Neue", cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+
+    color: #111;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: 4rem 0;
+
+    .about {
+      min-height: 340px;
+    }
+
+    .title {
+      font-size: 4.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .intro {
+      font-size: 2.2rem;
+      line-height: 1.12;
+      max-width: 1000px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about-section {
+    padding: 5rem 0;
+
+    .about {
+      min-height: 420px;
+    }
+
+    .title {
+      font-size: 5.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .intro {
+      font-size: 2.8rem;
+      line-height: 1.1;
+      max-width: 1200px;
+    }
+  }
+}

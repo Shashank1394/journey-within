@@ -8,23 +8,23 @@ const Discover = () => {
       <div className="container">
         <div className="row align-items-stretch">
           {/* Columns 2-7 */}
-          <div className="col-6 offset-1 d-flex">
+          <div className="col-7 offset-1 d-flex">
             <div className="discover w-100 d-flex flex-column justify-content-center text-center">
-              <h2 className="title">Hey, I&apos;m Riccardo</h2>
+              <h2 className="title">Discover the concept</h2>
 
               <p className="intro">
-                And I&apos;m looking forward to guiding you through our
-                beautiful journey, both in India and within. I invite you to
-                discover what pushed me to create this project
+                These trips have been thought and designed for this moment of
+                your life. A purpose-giving experiences is what is needed to
+                boost you into your next phase.
               </p>
             </div>
           </div>
 
           {/* Columns 8-11 */}
-          <div className="col-5 col-md-4 offset-md-1 d-flex align-items-center justify-content-center">
+          <div className="col-4 col-md-3 offset-md-1 d-flex align-items-center justify-content-center">
             <div className="photo">
               <Image
-                src="/assets/riccardo.webp"
+                src="/assets/jw-button.webp"
                 alt="Riccardo"
                 width={450}
                 height={450}
@@ -34,7 +34,7 @@ const Discover = () => {
           </div>
 
           {/* Column 8 */}
-          <div className="col-2 offset-6 offset-md-7 d-flex justify-content-center">
+          <div className="col-2 offset-7 offset-md-7 d-flex justify-content-center">
             <Image
               src="/assets/arrow.svg"
               alt="Arrow"
@@ -45,8 +45,8 @@ const Discover = () => {
           </div>
 
           {/* Columns 9-10 */}
-          <div className="col-5 offset-7 col-md-4 offset-md-8 d-flex justify-content-center text-center">
-            <p className="cta">Let&apos;s connect!</p>
+          <div className="col-9 offset-3 col-md-7 offset-md-5 d-flex justify-content-center text-center">
+            <p className="cta">Behind these adventures</p>
           </div>
         </div>
       </div>
