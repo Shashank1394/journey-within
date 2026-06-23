@@ -10,7 +10,7 @@ const Discover = () => {
           {/* Columns 2-7 */}
           <div className="col-7 offset-1 d-flex">
             <div className="discover w-100 d-flex flex-column justify-content-center text-center">
-              <h2 className="title">Discover the concept</h2>
+              <h2 className="title">Discover your future</h2>
 
               <p className="intro">
                 These trips have been thought and designed for this moment of
@@ -46,7 +46,7 @@ const Discover = () => {
 
           {/* Columns 9-10 */}
           <div className="col-9 offset-3 col-md-7 offset-md-5 d-flex justify-content-center text-center">
-            <p className="cta">Behind these adventures</p>
+            <p className="cta">Journey Within</p>
           </div>
         </div>
       </div>

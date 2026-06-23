@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 type JourneyPillarProps = {
-  number: string;
   title: string;
   description: string;
   image: string;
@@ -9,7 +8,6 @@ type JourneyPillarProps = {
 };
 
 const JourneyPillar = ({
-  number,
   title,
   description,
   image,
@@ -18,8 +16,6 @@ const JourneyPillar = ({
   return (
     <div className={`pillar ${reverse ? "pillar--reverse" : ""}`}>
       <div className="pillar__visual">
-        <span className="pillar__number">{number}</span>
-
         <div className="pillar__image">
           <Image src={image} alt={title} fill />
         </div>
