@@ -1,110 +1,157 @@
 .landing {
-  position: relative;
-  overflow: hidden;
+	position: relative;
+	overflow: hidden;
 
-  padding-top: 1rem;
+	padding-top: 1rem;
 
-  .container {
-    position: relative;
-  }
+	.container {
+		position: relative;
+	}
 
-  .map {
-    position: relative;
-    width: 100%;
-    top: 3rem;
-    z-index: 1;
+	.map {
+		position: relative;
+		width: 100%;
+		top: 3rem;
+		z-index: 1;
 
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
+		> img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
 
-  .title {
-    position: absolute;
-    top: 1rem;
-    left: 50%;
+	.pin {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 5;
 
-    transform: translateX(-50%);
+		&__image {
+			display: block;
+			width: 20vw;
+			// max-width: 140px;
+			height: auto;
+			object-fit: contain;
+		}
 
-    width: 100%;
-    margin: 0;
+		// Himalaya — upper-left quadrant of map (~30% from left, ~28% from top)
+		&--himalaya {
+			left: 22%;
+			top: 22%;
+		}
 
-    text-align: center;
+		// Tamil Nadu — lower-left area (~18% from left, ~72% from top)
+		&--tamilnadu {
+			left: 20%;
+			top: 60%;
+		}
+	}
 
-    font-family: "Roca", serif;
-    font-size: 2.5rem;
-    line-height: 1;
+	.title {
+		position: absolute;
+		top: 1rem;
+		left: 50%;
 
-    color: #f6c400;
+		transform: translateX(-50%);
 
-    text-shadow:
-      2px 2px 0 #1d4f3d,
-      0 0 2px rgba(0, 0, 0, 0.2);
+		width: 100%;
+		margin: 0;
 
-    z-index: 10;
-  }
+		text-align: center;
 
-  .copy {
-    position: absolute;
-    top: 2%;
-    right: 5%;
+		font-family: "Roca", serif;
+		font-size: 2.5rem;
+		line-height: 1;
 
-    width: 42%;
-    min-height: 220px;
+		color: #f6c400;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+		text-shadow:
+			2px 2px 0 #1d4f3d,
+			0 0 2px rgba(0, 0, 0, 0.2);
 
-    margin: 0;
+		z-index: 10;
+	}
 
-    text-align: center;
+	.copy {
+		position: absolute;
+		top: 2%;
+		right: 5%;
 
-    font-size: 1rem;
-    line-height: 1.15;
+		width: 42%;
+		min-height: 220px;
 
-    z-index: 10;
-  }
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		margin: 0;
+
+		text-align: center;
+
+		font-size: 1rem;
+		line-height: 1.15;
+
+		z-index: 10;
+	}
 }
 
 @media (min-width: 768px) {
-  .landing {
-    padding-top: 0;
+	.landing {
+		padding-top: 0;
 
-    .title {
-      top: 2rem;
-      font-size: 4rem;
-    }
+		.title {
+			top: 2rem;
+			font-size: 4rem;
+		}
 
-    .copy {
-      top: 10%;
-      right: 4%;
+		.copy {
+			top: 10%;
+			right: 4%;
 
-      font-size: 1.5rem;
-      line-height: 1.2;
-    }
-  }
+			font-size: 1.5rem;
+			line-height: 1.2;
+		}
+	}
 }
 
 @media (min-width: 992px) {
-  .landing {
-    padding-top: 5rem;
+	.landing {
+		padding-top: 5rem;
 
-    .title {
-      top: 2rem;
-      font-size: 5rem;
-    }
+		.title {
+			top: 2rem;
+			font-size: 5rem;
+		}
 
-    .copy {
-      top: 18%;
-      right: 6%;
+		.copy {
+			top: 18%;
+			right: 6%;
 
-      width: 38%;
+			width: 38%;
 
-      font-size: 2rem;
-      line-height: 1.1;
-    }
-  }
+			font-size: 2rem;
+			line-height: 1.1;
+		}
+
+		.pin {
+			&__image {
+				width: 20vw;
+				max-width: 300px;
+			}
+
+			// Himalaya — upper-left quadrant of map (~30% from left, ~28% from top)
+			&--himalaya {
+				left: 20%;
+				top: 22%;
+			}
+
+			// Tamil Nadu — lower-left area (~18% from left, ~72% from top)
+			&--tamilnadu {
+				left: 20%;
+				top: 56%;
+			}
+		}
+	}
 }
