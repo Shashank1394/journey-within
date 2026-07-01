@@ -1,0 +1,140 @@
+.itinerary-hero-section {
+	padding: 2rem 0 4rem;
+}
+
+.itinerary-hero {
+	// ── Title ─────────────────────────────────────────────────────
+	&__title {
+		margin: 0 0 0.3rem;
+		text-align: center;
+
+		font-family: "Roca", serif;
+		font-size: clamp(2rem, 8vw, 5rem);
+		font-weight: 700;
+		line-height: 1.05;
+
+		color: #f6c400;
+
+		text-shadow:
+			3px 3px 0 #1d4f3d,
+			0 0 4px rgba(0, 0, 0, 0.15);
+	}
+
+	// ── Date ──────────────────────────────────────────────────────
+	&__date {
+		margin: 0 0 0.5rem;
+		text-align: right;
+
+		font-family: "Roca", serif;
+		font-size: clamp(0.9rem, 2.5vw, 1.6rem);
+		font-weight: 700;
+		line-height: 1;
+
+		color: #f6c400;
+
+		text-shadow:
+			1px 1px 0 #1d4f3d,
+			0 0 3px rgba(0, 0, 0, 0.1);
+	}
+
+	// ── Card — ::before renders the brush, content sits on top ────
+	&__card {
+		position: relative;
+		// Enough height so the brush fills it and circles have room below
+		padding: clamp(3rem, 8vw, 6rem) 0 clamp(5rem, 12vw, 9rem);
+
+		// Brush stroke as a pseudo-element behind everything
+		&::before {
+			content: "";
+			position: absolute;
+			inset: -80% -25% -100% -40%;
+			background-image: url("/assets/itinerary/43.png");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			z-index: 0;
+		}
+	}
+
+	// ── Body copy — centred over the brush ─────────────────────────
+	&__body {
+		position: relative;
+		z-index: 1;
+
+		margin: 0 auto;
+		width: 65%;
+		top: 10;
+
+		text-align: center;
+
+		font-family: var(--font-coming-soon), "Comic Neue", cursive;
+		font-size: clamp(0.65rem, 1.6vw, 1.1rem);
+		font-weight: 700;
+		line-height: 1.7;
+		color: #fff;
+	}
+
+	// ── Circles ────────────────────────────────────────────────────
+	&__circles {
+		position: absolute;
+		bottom: 0;
+		right: 2%;
+		z-index: 2;
+
+		display: flex;
+		align-items: flex-end;
+	}
+
+	&__circle {
+		position: relative;
+		border-radius: 50%;
+		overflow: hidden;
+		border: 3px solid #fff;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+		flex-shrink: 0;
+
+		img {
+			object-fit: cover;
+		}
+
+		&--back {
+			width: clamp(70px, 12vw, 120px);
+			height: clamp(70px, 12vw, 120px);
+			margin-right: clamp(-24px, -3vw, -16px);
+			z-index: 1;
+		}
+
+		&--mid {
+			width: clamp(85px, 14vw, 145px);
+			height: clamp(85px, 14vw, 145px);
+			margin-right: clamp(-24px, -3vw, -16px);
+			z-index: 2;
+		}
+
+		&--front {
+			width: clamp(70px, 12vw, 120px);
+			height: clamp(70px, 12vw, 120px);
+			z-index: 3;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.itinerary-hero-section {
+		padding: 3rem 0 5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.itinerary-hero-section {
+		padding: 4rem 0 6rem;
+	}
+
+	.itinerary-hero {
+		&__card {
+			&::before {
+				inset: -80% 0% -100% -15%;
+			}
+		}
+	}
+}
