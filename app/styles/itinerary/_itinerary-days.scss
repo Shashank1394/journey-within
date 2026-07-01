@@ -79,6 +79,13 @@
 			font-weight: 400;
 			line-height: 1.5;
 			color: #222;
+
+			// Subtle faux-bold
+			text-shadow:
+				0.2px 0 0 #222,
+				-0.2px 0 0 #222,
+				0 0.2px 0 #222,
+				0 -0.2px 0 #222;
 		}
 	}
 }

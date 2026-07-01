@@ -1,0 +1,102 @@
+.itinerary-cta-section {
+	padding: 3rem 0 4rem;
+}
+
+.itinerary-cta {
+	&__map-col {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__map {
+		width: 100%;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+
+	&__text-col {
+		display: flex;
+		align-items: center;
+	}
+
+	&__text {
+		width: 100%;
+		text-align: center;
+	}
+
+	&__title {
+		margin: 0 0 0.75rem;
+
+		font-family: "Roca", serif;
+		font-size: clamp(1.6rem, 4.5vw, 3.2rem);
+		font-weight: 700;
+		line-height: 1.05;
+
+		color: #f6c400;
+
+		text-shadow:
+			2px 2px 0 #1d4f3d,
+			-1px -1px 0 #1d4f3d,
+			0 0 6px rgba(0, 0, 0, 0.1);
+	}
+
+	&__copy {
+		margin: 0 0 1.25rem;
+
+		font-family: var(--font-coming-soon), "Comic Neue", cursive;
+		font-size: clamp(0.85rem, 2.2vw, 1.35rem);
+		font-weight: 700;
+		line-height: 1.55;
+		color: #111;
+
+		// Subtle faux-bold
+		text-shadow:
+			0.2px 0 0 #111,
+			-0.2px 0 0 #111,
+			0 0.2px 0 #111,
+			0 -0.2px 0 #111;
+	}
+
+	&__cta {
+		display: inline-block;
+
+		font-family: "Roca", serif;
+		font-size: clamp(1.5rem, 4vw, 3rem);
+		font-weight: 700;
+		line-height: 1;
+		text-decoration: none;
+
+		color: #f6c400;
+
+		text-shadow:
+			2px 2px 0 #1d4f3d,
+			-1px -1px 0 #1d4f3d,
+			0 0 6px rgba(0, 0, 0, 0.1);
+
+		transition: opacity 0.2s ease;
+
+		&:hover,
+		&:focus-visible {
+			opacity: 0.8;
+			color: #f6c400;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.itinerary-cta-section {
+		padding: 4rem 0 5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.itinerary-cta-section {
+		padding: 5rem 0 6rem;
+	}
+}

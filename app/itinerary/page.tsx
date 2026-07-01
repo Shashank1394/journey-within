@@ -1,4 +1,5 @@
 import Footer from "../components/Footer";
+import ItineraryCTA from "../components/itinerary/ItineraryCTA";
 import ItineraryDays from "../components/itinerary/ItineraryDays";
 import ItineraryHero from "../components/itinerary/ItineraryHero";
 import Navbar from "../components/Navbar";
@@ -9,6 +10,7 @@ const ItineraryPage = () => {
 			<Navbar />
 			<ItineraryHero />
 			<ItineraryDays />
+			<ItineraryCTA />
 			<Footer />
 		</>
 	);
