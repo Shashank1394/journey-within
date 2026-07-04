@@ -33,7 +33,7 @@
 	&__title {
 		margin: 0 0 0.75rem;
 
-		font-family: "Roca", serif;
+		font-family: "Roca", "Times New Roman", serif;
 		font-size: clamp(1.6rem, 4.5vw, 3.2rem);
 		font-weight: 700;
 		line-height: 1.05;
@@ -66,7 +66,7 @@
 	&__cta {
 		display: inline-block;
 
-		font-family: "Roca", serif;
+		font-family: "Roca", "Times New Roman", serif;
 		font-size: clamp(1.5rem, 4vw, 3rem);
 		font-weight: 700;
 		line-height: 1;

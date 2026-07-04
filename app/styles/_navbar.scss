@@ -1,150 +1,150 @@
 @font-face {
-  font-family: "Roca";
-  src: url("/fonts/Roca-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: "Roca";
+	src: url("/fonts/Roca-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 .navbar-background {
-  background-image: url("/assets/header-brush.webp");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% 100%;
-  min-height: 60px;
+	background-image: url("/assets/header-brush.webp");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% 100%;
+	min-height: 60px;
 }
 
 nav {
-  position: relative;
-  padding: 0;
+	position: relative;
+	padding: 0;
 
-  a {
-    text-decoration: none;
-  }
+	a {
+		text-decoration: none;
+	}
 
-  h1 {
-    position: absolute;
-    top: 10px;
-    left: 20px;
+	h1 {
+		position: absolute;
+		top: 10px;
+		left: 20px;
 
-    margin: 0;
+		margin: 0;
 
-    font-family: "Roca", "Times New Roman", serif;
-    font-size: clamp(1.6rem, 7vw, 2.2rem);
-    line-height: 1;
+		font-family: "Roca", "Times New Roman", serif;
+		font-size: clamp(1.6rem, 7vw, 2.2rem);
+		line-height: 1;
 
-    color: #f5f5f2;
-    text-shadow: 3px 3px 0 #1a2b24;
+		color: #f5f5f2;
+		text-shadow: 1px 1px 0 #1a2b24;
 
-    z-index: 10;
-  }
+		z-index: 10;
+	}
 
-  .hamburger {
-    position: absolute;
-    top: 2px;
-    right: 24px;
+	.hamburger {
+		position: absolute;
+		top: 2px;
+		right: 24px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-    width: 44px;
-    height: 44px;
+		width: 44px;
+		height: 44px;
 
-    border: none;
-    background: transparent;
-    padding: 0;
+		border: none;
+		background: transparent;
+		padding: 0;
 
-    cursor: pointer;
-    color: #1d4f3d;
+		cursor: pointer;
+		color: #1d4f3d;
 
-    svg {
-      width: 24px;
-      height: 24px;
-      stroke-width: 2.5;
-    }
-  }
+		svg {
+			width: 24px;
+			height: 24px;
+			stroke-width: 2.5;
+		}
+	}
 
-  ul {
-    display: none;
+	ul {
+		display: none;
 
-    &.menu-open {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
+		&.menu-open {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
 
-      position: absolute;
-      top: 70px;
-      left: 0;
-      right: 0;
+			position: absolute;
+			top: 70px;
+			left: 0;
+			right: 0;
 
-      padding: 1.5rem;
-      margin: 0;
+			padding: 1.5rem;
+			margin: 0;
 
-      list-style: none;
+			list-style: none;
 
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 12px;
+			background: rgba(255, 255, 255, 0.95);
+			border-radius: 12px;
 
-      z-index: 20;
-    }
+			z-index: 20;
+		}
 
-    li a {
-      font-family: "Roca", "Times New Roman", serif;
-      font-size: 1.25rem;
-      font-weight: 600;
+		li a {
+			font-family: "Roca", "Times New Roman", serif;
+			font-size: 1.25rem;
+			font-weight: 600;
 
-      color: #1d4f3d;
-      text-decoration: none;
+			color: #1d4f3d;
+			text-decoration: none;
 
-      &:hover,
-      &:focus-visible {
-        color: #11392d;
-      }
-    }
-  }
+			&:hover,
+			&:focus-visible {
+				color: #11392d;
+			}
+		}
+	}
 }
 
 /* Desktop */
 
 @media (min-width: 992px) {
-  nav {
-    min-height: auto;
+	nav {
+		min-height: auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-    padding: 2rem 0rem 2.8rem;
+		padding: 1rem 0rem 1.8rem;
 
-    h1 {
-      position: static;
+		h1 {
+			position: static;
 
-      font-size: clamp(2.4rem, 4vw, 4rem);
-      white-space: nowrap;
-    }
+			font-size: clamp(2.4rem, 4vw, 4rem);
+			white-space: nowrap;
+		}
 
-    .hamburger {
-      display: none;
-    }
+		.hamburger {
+			display: none;
+		}
 
-    ul {
-      display: flex !important;
-      flex-direction: row;
-      align-items: center;
-      gap: clamp(1.2rem, 2.2vw, 3rem);
+		ul {
+			display: flex !important;
+			flex-direction: row;
+			align-items: center;
+			gap: clamp(1.2rem, 2.2vw, 3rem);
 
-      position: static;
+			position: static;
 
-      padding: 0;
-      margin: 0;
+			padding: 0;
+			margin: 0;
 
-      background: transparent;
+			background: transparent;
 
-      li a {
-        font-size: clamp(1.25rem, 1.45vw, 2rem);
-        text-shadow: 1.5px 1.5px 0 #f7f5e8;
-      }
-    }
-  }
+			li a {
+				font-size: clamp(1.25rem, 1.45vw, 2rem);
+				text-shadow: 1.5px 1.5px 0 #f7f5e8;
+			}
+		}
+	}
 }

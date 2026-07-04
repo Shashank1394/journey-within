@@ -23,3 +23,11 @@ body {
   position: relative;
   font-family: var(--font-coming-soon), "Comic Neue", cursive;
 }
+
+// Reduce Bootstrap container margins on large displays
+@media (min-width: 1920px) {
+  .container,
+  .container-xxl {
+    max-width: 1600px;
+  }
+}

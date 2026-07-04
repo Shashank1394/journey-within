@@ -21,8 +21,10 @@
 		font-size: 2rem;
 		font-weight: 700;
 		line-height: 1;
-		color: #f6c900;
-		text-shadow: 2px 2px 0 #000;
+		color: #f6c400;
+		text-shadow:
+			2px 2px 0 #000,
+			0 0 2px rgba(0, 0, 0, 0.15);
 	}
 
 	.intro,
@@ -75,8 +77,10 @@
 		font-family: "Roca", "Times New Roman", serif;
 		font-size: 1.8rem;
 		line-height: 0.1;
-		color: #f6c900;
-		text-shadow: 2px 2px 0 #000;
+		color: #f6c400;
+		text-shadow:
+			2px 2px 0 #000,
+			0 0 2px rgba(0, 0, 0, 0.15);
 	}
 
 	.bubble {
@@ -224,30 +228,38 @@
 		padding-bottom: 20rem;
 
 		.title {
-			font-size: 4rem;
+			font-size: 5.5rem;
 			padding-left: 15rem;
+			// top: -2rem;
 		}
 
 		.intro {
-			max-width: 900px;
-			font-size: 1.8rem;
+			max-width: 1100px;
+			font-size: 2.2rem;
 			padding-left: 3.2rem;
+			text-align: right;
+			// top: -3rem;
+			margin-right: 0;
 		}
 
 		.copy {
-			max-width: 950px;
-			font-size: 2rem;
+			max-width: 1160px;
+			font-size: 2.2rem;
+			text-align: right;
+			// top: -3rem;
 		}
 
 		.copy.accent {
-			max-width: 375px;
-			font-size: 1.8rem;
+			max-width: 520px;
+			font-size: 2.2rem;
+			text-align: right;
+			// top: -3rem;
 		}
 
 		.kicker {
-			margin-top: 12rem;
-			margin-right: 1rem;
-			font-size: 2rem;
+			margin-top: 10rem;
+			//   margin-right: 1rem;
+			font-size: 2.2rem;
 		}
 
 		.headline {
@@ -255,12 +267,14 @@
 		}
 
 		.bubble {
-			width: 720px;
-			padding: 1.75rem 2.5rem;
+			width: 930px;
+			//   padding: 1.75rem 2.5rem;
 		}
 
 		.mission {
 			font-size: 2rem;
+			margin-top: 6rem;
+			margin-right: 16rem;
 		}
 
 		.map {

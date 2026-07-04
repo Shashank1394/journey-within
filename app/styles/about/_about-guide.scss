@@ -28,7 +28,7 @@
 		margin: 0 0 0.75rem;
 		text-align: center;
 
-		font-family: "Roca", serif;
+		font-family: "Roca", "Times New Roman", serif;
 		font-size: 1.6rem;
 		font-weight: 700;
 		line-height: 1;
@@ -36,8 +36,8 @@
 		color: #f6c400;
 
 		text-shadow:
-			2px 2px 0 #1d4f3d,
-			0 0 3px rgba(0, 0, 0, 0.15);
+			2px 2px 0 #000,
+			0 0 2px rgba(0, 0, 0, 0.15);
 	}
 
 	&__intro {
@@ -141,7 +141,7 @@
 		padding: 3.5rem 5rem 4rem;
 
 		&__title {
-			font-size: 4rem;
+			font-size: 5.5rem;
 			margin-bottom: 1.5rem;
 		}
 

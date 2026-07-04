@@ -11,22 +11,24 @@
     width: 100%;
     margin: 0;
 
-    font-family: "Roca", serif;
+    font-family: "Roca", "Times New Roman", serif;
     font-size: 1.3rem;
     line-height: 0.95;
 
     color: #f6c400;
 
     text-shadow:
-      2px 2px 0 #000,
-      0 0 2px rgba(0, 0, 0, 0.2);
+      1px 1px 0 #000,
+      0 0 1px rgba(0, 0, 0, 0.2);
   }
 
   .intro {
     width: 100%;
     margin-top: 1rem;
-
+    color: #141414;
+    font-family: var(--font-coming-soon), "Comic Neue", cursive;
     font-size: 0.8rem;
+    font-weight: 700;
     line-height: 1.35;
   }
 
@@ -63,8 +65,8 @@
   color: #f6c400;
 
   text-shadow:
-    2px 2px 0 #000,
-    0 0 2px rgba(0, 0, 0, 0.2);
+    1px 1px 0 #000,
+    0 0 1px rgba(0, 0, 0, 0.2);
 
   transform: translateY(-1rem);
 }
@@ -102,7 +104,7 @@
     }
 
     .intro {
-      font-size: 1.6rem;
+      font-size: 2rem;
       line-height: 1.45;
     }
   }
