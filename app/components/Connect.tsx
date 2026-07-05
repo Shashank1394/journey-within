@@ -21,7 +21,7 @@ const Connect = () => {
           </div>
 
           {/* Columns 8-11 */}
-          <div className="col-5 col-md-4 offset-md-1 d-flex align-items-center justify-content-center">
+          <div className="col-5 col-md-3 offset-md-1 d-flex align-items-center justify-content-center">
             <div className="photo">
               <Image
                 src="/assets/riccardo.webp"

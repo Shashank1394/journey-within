@@ -32,7 +32,9 @@
     font-weight: 700;
     line-height: 1.35;
   }
+}
 
+.connect-section {
   .photo {
     width: 100%;
 
@@ -43,9 +45,7 @@
       object-fit: contain;
     }
   }
-}
 
-.connect-section {
   .arrow {
     display: block;
     width: 100%;
@@ -116,6 +116,12 @@
     .intro {
       font-size: 1.9rem;
       line-height: 1.4;
+    }
+  }
+
+  .connect-section {
+    .photo {
+      width: 80%;
     }
   }
 }
