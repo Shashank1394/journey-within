@@ -12,14 +12,15 @@
     margin: 0;
 
     font-family: "Roca", "Times New Roman", serif;
-    font-size: 1.3rem;
+    font-weight: 700;
+    font-size: 2rem;
     line-height: 0.95;
 
     color: #f6c400;
 
     text-shadow:
-      1px 1px 0 #000,
-      0 0 1px rgba(0, 0, 0, 0.2);
+      2px 2px 0 #000,
+      0 0 2px rgba(0, 0, 0, 0.15);
   }
 
   .intro {
