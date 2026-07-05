@@ -138,7 +138,7 @@
 
       h1 {
         font-size: clamp(2.4rem, 4vw, 4rem);
-        left: -3%;
+        left: -1%;
       }
 
       // Override the global nav ul { display: flex !important } from _navbar.scss
@@ -152,7 +152,7 @@
         // justify-content: right;
         // text-align: right;     make the font appear on the right side of the screen
         top: 1rem;
-        right: -3%;
+        right: -1%;
       }
     }
   }
