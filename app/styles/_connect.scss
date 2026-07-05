@@ -58,17 +58,18 @@
 
   text-align: center;
 
-  font-family: "Roca", serif;
-  font-size: 1.3rem;
+  font-family: "Roca", "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 2rem;
   line-height: 1;
 
   color: #f6c400;
 
   text-shadow:
     1px 1px 0 #000,
-    0 0 1px rgba(0, 0, 0, 0.2);
+    0 0 1px rgba(0, 0, 0, 0.15);
 
-  transform: translateY(-1rem);
+  // transform: translateY(-1rem);
 }
 
 @media (min-width: 768px) {
@@ -101,6 +102,28 @@
   .connect {
     .title {
       font-size: 3rem;
+    }
+
+    .intro {
+      font-size: 2rem;
+      line-height: 1.45;
+    }
+  }
+
+  .cta {
+    font-size: 2.6rem;
+    transform: translateY(-2rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .connect-section {
+    padding-top: 5rem;
+  }
+
+  .connect {
+    .title {
+      font-size: 5.5rem;
     }
 
     .intro {
