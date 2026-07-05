@@ -45,37 +45,42 @@
   }
 }
 
-.arrow {
-  display: block;
-  width: 100%;
-  height: auto;
-  position: relative;
-  bottom: 2rem;
-}
+.connect-section {
+  .arrow {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 2rem;
+  }
 
-.cta {
-  width: 100%;
-  margin: 0;
+  .cta {
+    width: 100%;
+    margin: 0;
 
-  text-align: center;
+    text-align: center;
 
-  font-family: "Roca", "Times New Roman", serif;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1;
+    font-family: "Roca", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
 
-  color: #f6c400;
+    color: #f6c400;
 
-  text-shadow:
-    1px 1px 0 #000,
-    0 0 1px rgba(0, 0, 0, 0.15);
-
-  // transform: translateY(-1rem);
+    text-shadow:
+      2px 2px 0 #000,
+      0 0 2px rgba(0, 0, 0, 0.15);
+  }
 }
 
 @media (min-width: 768px) {
   .connect-section {
     padding-top: 4rem;
+
+    .cta {
+      font-size: 1.8rem;
+      transform: translateY(-1.5rem);
+    }
   }
 
   .connect {
@@ -88,38 +93,19 @@
       line-height: 1.4;
     }
   }
-
-  .cta {
-    font-size: 1.8rem;
-    transform: translateY(-1.5rem);
-  }
 }
 
 @media (min-width: 992px) {
   .connect-section {
-    padding-top: 5rem;
-  }
+    padding-top: 4rem;
 
-  .connect {
-    .title {
-      font-size: 3rem;
+    .arrow {
+      width: 50%;
     }
 
-    .intro {
-      font-size: 2rem;
-      line-height: 1.45;
+    .cta {
+      font-size: 5.5rem;
     }
-  }
-
-  .cta {
-    font-size: 2.6rem;
-    transform: translateY(-2rem);
-  }
-}
-
-@media (min-width: 992px) {
-  .connect-section {
-    padding-top: 5rem;
   }
 
   .connect {
@@ -128,13 +114,8 @@
     }
 
     .intro {
-      font-size: 2rem;
-      line-height: 1.45;
+      font-size: 1.9rem;
+      line-height: 1.4;
     }
-  }
-
-  .cta {
-    font-size: 2.6rem;
-    transform: translateY(-2rem);
   }
 }

@@ -45,7 +45,7 @@ const Connect = () => {
           </div>
 
           {/* Columns 9-10 */}
-          <div className="col-5 offset-7 col-md-4 offset-md-8 d-flex justify-content-center text-center">
+          <div className="col-5 offset-7 col-md-5 offset-md-7 d-flex justify-content-center text-center">
             <p className="cta">Let&apos;s connect!</p>
           </div>
         </div>
