@@ -29,6 +29,11 @@
     left: 0;
     right: 0;
     z-index: 10;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.28s ease, opacity 0.2s ease;
+    will-change: transform;
 
     // Same brush background as the standard navbar
     // background-image: url("/assets/header-brush.webp");
@@ -36,6 +41,12 @@
     background-position: center top;
     background-size: 100% 100%;
     min-height: 60px;
+  }
+
+  &__navbar--visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
   }
 
   &__nav {
