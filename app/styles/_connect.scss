@@ -13,7 +13,7 @@
 
     font-family: "Roca", "Times New Roman", serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.3rem;
     line-height: 0.95;
 
     color: #f6c400;
@@ -62,7 +62,7 @@
 
     font-family: "Roca", "Times New Roman", serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.3rem;
     line-height: 1;
 
     color: #f6c400;
@@ -78,7 +78,7 @@
     padding-top: 4rem;
 
     .cta {
-      font-size: 1.8rem;
+      font-size: 2.5rem;
       transform: translateY(-1.5rem);
     }
   }
@@ -96,6 +96,68 @@
 }
 
 @media (min-width: 992px) {
+  .connect-section {
+    padding-top: 4rem;
+
+    .arrow {
+      width: 50%;
+    }
+
+    .cta {
+      font-size: 3rem;
+    }
+  }
+
+  .connect {
+    .title {
+      font-size: 3rem;
+    }
+
+    .intro {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+  }
+
+  .connect-section {
+    .photo {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .connect-section {
+    padding-top: 4rem;
+
+    .arrow {
+      width: 50%;
+    }
+
+    .cta {
+      font-size: 4rem;
+    }
+  }
+
+  .connect {
+    .title {
+      font-size: 4rem;
+    }
+
+    .intro {
+      font-size: 1.9rem;
+      line-height: 1.4;
+    }
+  }
+
+  .connect-section {
+    .photo {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
   .connect-section {
     padding-top: 4rem;
 
