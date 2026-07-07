@@ -1,5 +1,9 @@
 .connect-section {
   padding-top: 2rem;
+
+  .connect-copy-col {
+    margin-left: calc(100% / 24);
+  }
 }
 
 .connect {
@@ -52,6 +56,11 @@
     height: auto;
     position: relative;
     bottom: 2rem;
+    right: 1rem;
+  }
+
+  .cta-container {
+    margin-top: -1.25rem;
   }
 
   .cta {
@@ -77,6 +86,14 @@
 @media (min-width: 768px) {
   .connect-section {
     padding-top: 4rem;
+
+    .connect-copy-col {
+      margin-left: 8.33333333%;
+    }
+
+    .cta-container {
+      margin-top: 0;
+    }
 
     .cta {
       font-size: 2.5rem;
