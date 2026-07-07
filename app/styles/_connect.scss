@@ -19,8 +19,8 @@
     color: #f6c400;
 
     text-shadow:
-      2px 2px 0 #000,
-      0 0 2px rgba(0, 0, 0, 0.15);
+      1px 1px 0 #000,
+      0 0 1px rgba(0, 0, 0, 0.15);
   }
 
   .intro {
@@ -69,8 +69,8 @@
     color: #f6c400;
 
     text-shadow:
-      2px 2px 0 #000,
-      0 0 2px rgba(0, 0, 0, 0.15);
+      1px 1px 0 #000,
+      0 0 1px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -81,12 +81,20 @@
     .cta {
       font-size: 2.5rem;
       transform: translateY(-1.5rem);
+
+      text-shadow:
+        2px 2px 0 #000,
+        0 0 2px rgba(0, 0, 0, 0.15);
     }
   }
 
   .connect {
     .title {
       font-size: 2.5rem;
+
+      text-shadow:
+        2px 2px 0 #000,
+        0 0 2px rgba(0, 0, 0, 0.15);
     }
 
     .intro {

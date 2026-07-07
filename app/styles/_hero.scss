@@ -23,8 +23,8 @@
     line-height: 1;
     color: #f6c400;
     text-shadow:
-      2px 2px 0 #000,
-      0 0 2px rgba(0, 0, 0, 0.15);
+      1px 1px 0 #000,
+      0 0 1px rgba(0, 0, 0, 0.15);
   }
 
   .intro,
@@ -80,8 +80,8 @@
     font-weight: 700;
     color: #f6c400;
     text-shadow:
-      2px 2px 0 #000,
-      0 0 2px rgba(0, 0, 0, 0.15);
+      1px 1px 0 #000,
+      0 0 1px rgba(0, 0, 0, 0.15);
   }
 
   .bubble {
@@ -119,6 +119,10 @@
 
     .title {
       font-size: 3rem;
+
+      text-shadow:
+        2px 2px 0 #000,
+        0 0 2px rgba(0, 0, 0, 0.15);
     }
 
     .intro {
@@ -149,6 +153,10 @@
     .headline {
       font-size: 2.6rem;
       margin-right: 0;
+
+      text-shadow:
+        2px 2px 0 #000,
+        0 0 2px rgba(0, 0, 0, 0.15);
     }
 
     .bubble {
