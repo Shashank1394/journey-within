@@ -10,12 +10,15 @@ const About = () => {
               <h2 className="title">About the Journey</h2>
 
               <p className="intro">
-                Journey Within was born from the belief that travel can become a
-                path back to oneself.
+                Journey Within was born from the belief that travel can
                 <br />
-                Each experience is designed around the same ingredients that
-                helped me find clarity, purpose and inner connection during the
-                most confusing seasons of my life.
+                become a path back to oneself.
+                <br />
+                Each experience is designed around the same ingredients that{" "}
+                helped me
+                <br /> find clarity, purpose and inner connection during the
+                most
+                <br /> confusing seasons of my life.
               </p>
             </div>
           </div>

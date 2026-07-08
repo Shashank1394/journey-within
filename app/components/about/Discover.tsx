@@ -8,7 +8,7 @@ const Discover = () => {
       <div className="container">
         <div className="row align-items-stretch">
           {/* Columns 2-7 */}
-          <div className="col-7 offset-1 d-flex">
+          <div className="col-6 offset-1 d-flex">
             <div className="discover w-100 d-flex flex-column justify-content-center text-center">
               <h2 className="title">Discover your future</h2>
 
@@ -45,7 +45,7 @@ const Discover = () => {
           </div>
 
           {/* Columns 9-10 */}
-          <div className="col-9 offset-3 col-md-7 offset-md-5 d-flex justify-content-center text-center">
+          <div className="col-9 offset-3 col-md-7 offset-md-6 d-flex justify-content-center text-center">
             <p className="cta">Journey Within</p>
           </div>
         </div>

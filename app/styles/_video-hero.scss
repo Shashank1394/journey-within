@@ -1,8 +1,10 @@
 .video-hero {
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 100svh; // full viewport height, respects mobile browser chrome
   overflow: hidden;
+  box-shadow: 0 4rem 5.5rem rgba(20, 20, 20, 0.58);
 
   // ── Background video ──────────────────────────────────────────
   &__video {

@@ -21,7 +21,9 @@ const JourneyPillar = ({
         </div>
       </div>
 
-      <div className="pillar__content">
+      <div
+        className={`pillar__content ${reverse ? "text-left" : "text-right"}`}
+      >
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

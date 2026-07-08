@@ -188,11 +188,14 @@
     padding-top: 4rem;
 
     .arrow {
-      width: 50%;
+      width: 65%;
+      bottom: 6rem;
+      right: 4rem;
     }
 
     .cta {
       font-size: 5.5rem;
+      transform: translateY(-6rem);
     }
   }
 

@@ -1,114 +1,128 @@
 .discover-section {
-	padding-top: 2rem;
+  padding-top: 2rem;
 
-	.arrow {
-		display: block;
-		width: 100%;
-		height: auto;
-		position: relative;
-		bottom: 2rem;
-	}
+  .arrow {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 2rem;
+  }
 
-	.cta {
-		width: 100%;
-		margin: 0;
+  .cta {
+    width: 100%;
+    margin: 0;
 
-		text-align: center;
+    text-align: center;
+    font-weight: 700;
 
-		font-family: "Roca", "Times New Roman", serif;
-		font-size: 1.3rem;
-		line-height: 1;
+    font-family: "Roca", "Times New Roman", serif;
+    font-size: 1.3rem;
+    line-height: 1;
 
-		color: #f6c400;
+    color: #f6c400;
 
-		text-shadow:
-			2px 2px 0 #000,
-			0 0 2px rgba(0, 0, 0, 0.2);
+    text-shadow:
+      2px 2px 0 #000,
+      0 0 2px rgba(0, 0, 0, 0.2);
 
-		transform: translateY(-1rem);
-	}
+    transform: translateY(-1rem);
+  }
 }
 
 .discover {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-	.title {
-		width: 100%;
-		margin: 0;
+  .title {
+    width: 100%;
+    margin: 0;
 
-		font-family: "Roca", "Times New Roman", serif;
-		font-size: 1.3rem;
-		line-height: 0.95;
+    font-family: "Roca", "Times New Roman", serif;
+    font-size: 1.3rem;
+    line-height: 0.95;
+    font-weight: 700;
 
-		color: #f6c400;
+    color: #f6c400;
 
-		text-shadow:
-			2px 2px 0 #000,
-			0 0 2px rgba(0, 0, 0, 0.2);
-	}
+    text-shadow:
+      2px 2px 0 #000,
+      0 0 2px rgba(0, 0, 0, 0.2);
+  }
 
-	.intro {
-		width: 100%;
-		margin-top: 1rem;
+  .intro {
+    width: 100%;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
 
-		font-size: 0.8rem;
-		line-height: 1.35;
-	}
+  .photo {
+    width: 100%;
 
-	.photo {
-		width: 100%;
-
-		img {
-			display: block;
-			width: 100%;
-			height: auto;
-			object-fit: contain;
-		}
-	}
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
 }
 
 @media (min-width: 768px) {
-	.discover-section {
-		padding-top: 4rem;
+  .discover-section {
+    padding-top: 4rem;
 
-		.cta {
-			font-size: 1.8rem;
-			transform: translateY(-1.5rem);
-		}
-	}
+    .cta {
+      font-size: 1.8rem;
+      transform: translateY(-1.5rem);
+    }
+  }
 
-	.discover {
-		.title {
-			font-size: 4.5rem;
-		}
+  .discover {
+    .title {
+      font-size: 4.5rem;
+    }
 
-		.intro {
-			font-size: 1.35rem;
-			line-height: 1.4;
-		}
-	}
+    .intro {
+      font-size: 1.35rem;
+      line-height: 1.4;
+    }
+  }
 }
 
 @media (min-width: 992px) {
-	.discover-section {
-		padding-top: 5rem;
+  .discover-section {
+    padding-top: 5rem;
 
-		.cta {
-			font-size: 2.6rem;
-			transform: translateY(-2rem);
-		}
-	}
+    .arrow {
+      width: 65%;
+      bottom: 6rem;
+      right: 4rem;
+    }
 
-	.discover {
-		.title {
-			font-size: 5.5rem;
-		}
+    .cta {
+      font-size: 5.1rem;
+      transform: translateY(-4rem);
+    }
+  }
 
-		.intro {
-			font-size: 1.6rem;
-			line-height: 1.45;
-		}
-	}
+  .discover {
+    .title {
+      font-size: 5.1rem;
+    }
+
+    .intro {
+      font-size: 2.2rem;
+      line-height: 1.45;
+    }
+
+    .photo {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
 }
