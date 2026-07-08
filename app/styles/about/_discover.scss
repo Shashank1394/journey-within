@@ -1,0 +1,225 @@
+.about-page {
+  .discover-section {
+    padding-top: 2rem;
+
+    .arrow {
+      display: block;
+      width: 100%;
+      height: auto;
+      position: relative;
+      bottom: 2rem;
+      right: 2rem;
+    }
+
+    .cta {
+      width: 100%;
+      margin: 0;
+
+      text-align: center;
+      font-weight: 700;
+
+      font-family: "Roca", "Times New Roman", serif;
+      font-size: 1.1rem;
+      line-height: 1;
+
+      color: #f6c400;
+
+      text-shadow:
+        1px 1px 0 #000,
+        0 0 1px rgba(0, 0, 0, 0.2);
+
+      transform: translateY(-2rem) translateX(3rem);
+    }
+  }
+
+  .discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      width: 100%;
+      margin: 0;
+
+      font-family: "Roca", "Times New Roman", serif;
+      font-size: 1.1rem;
+      line-height: 0.95;
+      font-weight: 700;
+
+      color: #f6c400;
+
+      text-shadow:
+        1px 1px 0 #000,
+        0 0 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .intro {
+      width: 100%;
+      margin-top: 0.3rem;
+      font-weight: 700;
+      font-size: 0.8rem;
+      line-height: 1.35;
+    }
+
+    .photo {
+      width: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-page {
+    .discover-section {
+      padding-top: 4rem;
+
+      .arrow {
+        width: 65%;
+        bottom: 4rem;
+        right: 2rem;
+      }
+
+      .cta {
+        font-size: 2.2rem;
+        transform: translateY(-1.5rem);
+        text-shadow:
+          2px 2px 0 #000,
+          0 0 2px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .discover {
+      .title {
+        font-size: 2.2rem;
+        text-shadow:
+          2px 2px 0 #000,
+          0 0 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .intro {
+        font-size: 1.35rem;
+        line-height: 1.4;
+      }
+
+      .photo {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about-page {
+    .discover-section {
+      padding-top: 5rem;
+
+      .arrow {
+        width: 65%;
+        bottom: 4rem;
+        right: 2rem;
+      }
+
+      .cta {
+        font-size: 3rem;
+        transform: translateY(-3rem);
+      }
+    }
+
+    .discover {
+      .title {
+        font-size: 3rem;
+      }
+
+      .intro {
+        font-size: 1.5rem;
+        line-height: 1.45;
+      }
+
+      .photo {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-page {
+    .discover-section {
+      padding-top: 5rem;
+
+      .arrow {
+        width: 65%;
+        bottom: 6rem;
+        right: 4rem;
+      }
+
+      .cta {
+        font-size: 3.5rem;
+        transform: translateY(-4rem);
+      }
+    }
+
+    .discover {
+      .title {
+        font-size: 3.5rem;
+      }
+
+      .intro {
+        font-size: 1.7rem;
+        line-height: 1.45;
+      }
+
+      .photo {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-page {
+    .discover-section {
+      padding-top: 5rem;
+
+      .arrow {
+        width: 65%;
+        bottom: 6rem;
+        right: 4rem;
+      }
+
+      .cta {
+        font-size: 4rem;
+        transform: translateY(-4rem);
+      }
+    }
+
+    .discover {
+      .title {
+        font-size: 4rem;
+      }
+
+      .intro {
+        font-size: 2rem;
+        line-height: 1.45;
+      }
+
+      .photo {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

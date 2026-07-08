@@ -8,7 +8,7 @@ const Discover = () => {
       <div className="container">
         <div className="row align-items-stretch">
           {/* Columns 2-7 */}
-          <div className="col-7 offset-1 d-flex">
+          <div className="col-6 offset-1 d-flex">
             <div className="discover w-100 d-flex flex-column justify-content-center text-center">
               <h2 className="title">Discover the concept</h2>
 
