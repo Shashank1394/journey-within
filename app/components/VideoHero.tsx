@@ -53,7 +53,7 @@ const VideoHero = () => {
       {/* Full-bleed background video */}
       <video
         className="video-hero__video"
-        src="/assets/intro_vid.mov"
+        src="/assets/intro-vid.mp4"
         autoPlay
         muted
         loop
