@@ -44,7 +44,7 @@
 		margin: 0 0 0.5rem;
 
 		font-family: var(--font-coming-soon), "Comic Neue", cursive;
-		font-size: clamp(1.1rem, 3vw, 1.7rem);
+		font-size: 0.65rem;
 		font-weight: 700;
 		line-height: 1.1;
 		color: #111;
@@ -75,7 +75,7 @@
 			margin-bottom: 0.35rem;
 
 			font-family: var(--font-coming-soon), "Comic Neue", cursive;
-			font-size: clamp(0.7rem, 1.8vw, 1rem);
+			font-size: 0.65rem;
 			font-weight: 400;
 			line-height: 1.5;
 			color: #222;
@@ -101,6 +101,16 @@
 		&__image {
 			max-width: 280px;
 		}
+
+		&__heading {
+			font-size: 1.2rem;
+		}
+
+		&__list {
+			li {
+				font-size: 1.1rem;
+			}
+		}
 	}
 }
 
@@ -114,6 +124,58 @@
 
 		&__image {
 			max-width: 340px;
+		}
+
+		&__heading {
+			font-size: 1.3rem;
+		}
+
+		&__list {
+			li {
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.itinerary-day {
+		&__heading {
+			font-size: 1.8rem;
+		}
+
+		&__list {
+			li {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.itinerary-day {
+		&__heading {
+			font-size: 1.8rem;
+		}
+
+		&__list {
+			li {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	.itinerary-day {
+		&__heading {
+			font-size: 2.2rem;
+		}
+
+		&__list {
+			li {
+				font-size: 2.2rem;
+			}
 		}
 	}
 }

@@ -34,23 +34,22 @@
 		margin: 0 0 0.75rem;
 
 		font-family: "Roca", "Times New Roman", serif;
-		font-size: clamp(1.6rem, 4.5vw, 3.2rem);
+		font-size: 1.5rem;
 		font-weight: 700;
 		line-height: 1.05;
 
 		color: #f6c400;
 
 		text-shadow:
-			2px 2px 0 #1d4f3d,
-			-1px -1px 0 #1d4f3d,
-			0 0 6px rgba(0, 0, 0, 0.1);
+			1px 1px 0 #000,
+			0 0 1px rgba(0, 0, 0, 0.15);
 	}
 
 	&__copy {
 		margin: 0 0 1.25rem;
 
 		font-family: var(--font-coming-soon), "Comic Neue", cursive;
-		font-size: clamp(0.85rem, 2.2vw, 1.35rem);
+		font-size: 0.65rem;
 		font-weight: 700;
 		line-height: 1.55;
 		color: #111;
@@ -67,7 +66,7 @@
 		display: inline-block;
 
 		font-family: "Roca", "Times New Roman", serif;
-		font-size: clamp(1.5rem, 4vw, 3rem);
+		font-size: 1.5rem;
 		font-weight: 700;
 		line-height: 1;
 		text-decoration: none;
@@ -75,9 +74,8 @@
 		color: #f6c400;
 
 		text-shadow:
-			2px 2px 0 #1d4f3d,
-			-1px -1px 0 #1d4f3d,
-			0 0 6px rgba(0, 0, 0, 0.1);
+			1px 1px 0 #000,
+			0 0 1px rgba(0, 0, 0, 0.15);
 
 		transition: opacity 0.2s ease;
 
@@ -93,10 +91,94 @@
 	.itinerary-cta-section {
 		padding: 4rem 0 5rem;
 	}
+
+	.itinerary-cta {
+		&__title {
+			font-size: 3rem;
+
+			text-shadow:
+				2px 2px 0 #000,
+				0 0 2px rgba(0, 0, 0, 0.15);
+		}
+
+		&__copy {
+			font-size: 1.1rem;
+		}
+
+		&__cta {
+			font-size: 2.6rem;
+
+			text-shadow:
+				2px 2px 0 #000,
+				0 0 2px rgba(0, 0, 0, 0.15);
+		}
+	}
 }
 
 @media (min-width: 992px) {
 	.itinerary-cta-section {
 		padding: 5rem 0 6rem;
+	}
+
+	.itinerary-cta {
+		&__title {
+			font-size: 4rem;
+		}
+
+		&__copy {
+			font-size: 1.3rem;
+		}
+
+		&__cta {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.itinerary-cta {
+		&__title {
+			font-size: 5rem;
+		}
+
+		&__copy {
+			font-size: 1.8rem;
+		}
+
+		&__cta {
+			font-size: 5rem;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.itinerary-cta {
+		&__title {
+			font-size: 4.8rem;
+		}
+
+		&__copy {
+			font-size: 1.8rem;
+		}
+
+		&__cta {
+			font-size: 4.8rem;
+		}
+	}
+}
+
+@media (min-width: 1920px) {
+	.itinerary-cta {
+		&__title {
+			font-size: 5.5rem;
+		}
+
+		&__copy {
+			font-size: 2.2rem;
+		}
+
+		&__cta {
+			font-size: 5.5rem;
+		}
 	}
 }
