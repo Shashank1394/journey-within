@@ -1,13 +1,9 @@
 .about-section {
   position: relative;
-  padding: 3rem 0;
-
-  .about {
-    min-height: 280px;
-  }
+  padding: 1rem 0;
 
   .title {
-    margin: 0 0 2rem;
+    margin: 0 0 0.6rem;
 
     font-family: "Roca", "Times New Roman", serif;
     font-size: 1.5rem;
@@ -17,8 +13,8 @@
     color: #f6c400;
 
     text-shadow:
-      3px 3px 0 #000,
-      0 0 4px rgba(0, 0, 0, 0.15);
+      1px 1px 0 #000,
+      0 0 1px rgba(0, 0, 0, 0.15);
   }
 
   .intro {
@@ -37,19 +33,23 @@
 
 @media (min-width: 768px) {
   .about-section {
-    padding: 4rem 0;
+    // padding: 4rem 0;
 
     .about {
       min-height: 340px;
     }
 
     .title {
-      font-size: 4.5rem;
+      font-size: 3rem;
       margin-bottom: 2.5rem;
+
+      text-shadow:
+        2px 2px 0 #000,
+        0 0 2px rgba(0, 0, 0, 0.15);
     }
 
     .intro {
-      font-size: 2.2rem;
+      font-size: 1.2rem;
       line-height: 1.12;
       max-width: 1000px;
     }
@@ -58,22 +58,58 @@
 
 @media (min-width: 992px) {
   .about-section {
-    padding: 5rem 0;
+    // padding: 5rem 0;
 
     .about {
       min-height: 420px;
     }
 
     .title {
-      font-size: 5.5rem;
+      font-size: 4rem;
       margin-bottom: 3rem;
     }
 
     .intro {
       // font-weight: 700;
-      font-size: 2.2rem;
+      font-size: 1.3rem;
       line-height: 1.1;
       max-width: 1200px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-section {
+    .title {
+      font-size: 5rem;
+    }
+
+    .intro {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-section {
+    .title {
+      font-size: 4.8rem;
+    }
+
+    .intro {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .about-section {
+    .title {
+      font-size: 5.5rem;
+    }
+
+    .intro {
+      font-size: 2.2rem;
     }
   }
 }
