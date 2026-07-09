@@ -16,8 +16,9 @@
 		color: #f6c400;
 
 		text-shadow:
-			1px 1px 0 #000,
-			0 0 1px rgba(0, 0, 0, 0.15);
+			-2px -2px 0 #ffecdc,
+			1px 1px 0 #07340c,
+			0 0 1px #07340c;
 	}
 
 	// ── Date ──────────────────────────────────────────────────────
@@ -33,8 +34,9 @@
 		color: #f6c400;
 
 		text-shadow:
-			1px 1px 0 #000,
-			0 0 1px rgba(0, 0, 0, 0.15);
+			-2px -2px 0 #ffecdc,
+			1px 1px 0 #07340c,
+			0 0 1px #07340c;
 	}
 
 	// ── Card — ::before renders the brush, content sits on top ────
@@ -130,16 +132,18 @@
 			font-size: 3rem;
 
 			text-shadow:
-				2px 2px 0 #000,
-				0 0 2px rgba(0, 0, 0, 0.15);
+				-2px -2px 0 #ffecdc,
+				2px 2px 0 #07340c,
+				0 0 2px #07340c;
 		}
 
 		&__date {
 			font-size: 1.2rem;
 
 			text-shadow:
-				2px 2px 0 #000,
-				0 0 2px rgba(0, 0, 0, 0.15);
+				-2px -2px 0 #ffecdc,
+				2px 2px 0 #07340c,
+				0 0 2px #07340c;
 		}
 
 		&__body {

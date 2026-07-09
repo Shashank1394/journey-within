@@ -51,14 +51,14 @@
 
 		// Simulate bold by painting the same colour in all directions
 		text-shadow:
-			0.4px 0 0 #111,
-			-0.4px 0 0 #111,
-			0 0.4px 0 #111,
-			0 -0.4px 0 #111,
-			0.4px 0.4px 0 #111,
-			-0.4px -0.4px 0 #111,
-			0.4px -0.4px 0 #111,
-			-0.4px 0.4px 0 #111;
+			0.4px 0 0 #07340c,
+			-0.4px 0 0 #07340c,
+			0 0.4px 0 #07340c,
+			0 -0.4px 0 #07340c,
+			0.4px 0.4px 0 #07340c,
+			-0.4px -0.4px 0 #07340c,
+			0.4px -0.4px 0 #07340c,
+			-0.4px 0.4px 0 #07340c;
 	}
 
 	&__separator {
@@ -82,10 +82,10 @@
 
 			// Subtle faux-bold
 			text-shadow:
-				0.2px 0 0 #222,
-				-0.2px 0 0 #222,
-				0 0.2px 0 #222,
-				0 -0.2px 0 #222;
+				0.2px 0 0 #07340c,
+				-0.2px 0 0 #07340c,
+				0 0.2px 0 #07340c,
+				0 -0.2px 0 #07340c;
 		}
 	}
 }

@@ -41,8 +41,9 @@
 		color: #f6c400;
 
 		text-shadow:
-			1px 1px 0 #000,
-			0 0 1px rgba(0, 0, 0, 0.15);
+			-2px -2px 0 #ffecdc,
+			1px 1px 0 #07340c,
+			0 0 1px #07340c;
 	}
 
 	&__copy {
@@ -56,10 +57,10 @@
 
 		// Subtle faux-bold
 		text-shadow:
-			0.2px 0 0 #111,
-			-0.2px 0 0 #111,
-			0 0.2px 0 #111,
-			0 -0.2px 0 #111;
+			0.2px 0 0 #07340c,
+			-0.2px 0 0 #07340c,
+			0 0.2px 0 #07340c,
+			0 -0.2px 0 #07340c;
 	}
 
 	&__cta {
@@ -74,8 +75,9 @@
 		color: #f6c400;
 
 		text-shadow:
-			1px 1px 0 #000,
-			0 0 1px rgba(0, 0, 0, 0.15);
+			-2px -2px 0 #ffecdc,
+			1px 1px 0 #07340c,
+			0 0 1px #07340c;
 
 		transition: opacity 0.2s ease;
 
@@ -97,8 +99,9 @@
 			font-size: 3rem;
 
 			text-shadow:
-				2px 2px 0 #000,
-				0 0 2px rgba(0, 0, 0, 0.15);
+				-2px -2px 0 #ffecdc,
+				2px 2px 0 #07340c,
+				0 0 2px #07340c;
 		}
 
 		&__copy {
@@ -109,8 +112,9 @@
 			font-size: 2.6rem;
 
 			text-shadow:
-				2px 2px 0 #000,
-				0 0 2px rgba(0, 0, 0, 0.15);
+				-2px -2px 0 #ffecdc,
+				2px 2px 0 #07340c,
+				0 0 2px #07340c;
 		}
 	}
 }
