@@ -7,6 +7,9 @@
 }
 
 .navbar-background {
+	position: relative;
+	z-index: 50;
+
 	background-image: url("/assets/header-brush.webp");
 	background-repeat: no-repeat;
 	background-position: center top;
