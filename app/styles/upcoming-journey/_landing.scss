@@ -1,298 +1,310 @@
+@keyframes pin-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  70% {
+    transform: scale(0.92);
+  }
+  85% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Standalone rule — no nesting needed, triggered by JS adding the class
+.pin__preview--pop {
+  animation: pin-pop 1.4s ease-out forwards !important;
+  transition: none !important;
+}
+
 .landing {
-	position: relative;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 
-	padding-top: 1rem;
-	padding-bottom: 2rem;
+  .container {
+    position: relative;
+  }
 
-	.container {
-		position: relative;
-	}
+  .map {
+    position: relative;
+    width: 100%;
+    top: 6rem;
+    z-index: 1;
 
-	.map {
-		position: relative;
-		width: 100%;
-		top: 6rem;
-		z-index: 1;
+    > img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 
-		> img {
-			display: block;
-			width: 100%;
-			height: auto;
-		}
-	}
+  .pin {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
 
-	.pin {
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		z-index: 5;
+    &__image {
+      display: block;
+      width: 20vw;
+      height: auto;
+      object-fit: contain;
+      position: relative;
+      z-index: 2;
+    }
 
-		// Make the whole pin a hover target
-		cursor: pointer;
+    &__preview {
+      position: absolute;
+      z-index: 20;
+      width: clamp(280px, 28vw, 280px);
 
-		&__image {
-			display: block;
-			width: 20vw;
-			height: auto;
-			object-fit: contain;
-			position: relative;
-			z-index: 2;
-		}
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
 
-		// Preview photo — hidden until pin is hovered
-		&__preview {
-			position: absolute;
-			z-index: 20;
+      // Desktop: show desktop image, hide mobile image
+      .pin__preview-img--mobile {
+        display: none;
+      }
+      .pin__preview-img--desktop {
+        display: block;
+      }
 
-			width: clamp(160px, 28vw, 280px);
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
 
-			border-radius: 0.75rem;
-			overflow: hidden;
-			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      &--visible {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
 
-			opacity: 0;
-			pointer-events: none;
-			transform: translateY(8px);
-			transition:
-				opacity 0.25s ease,
-				transform 0.25s ease;
+      &--himalaya {
+        top: -14%;
+        left: 24%;
+      }
 
-			img {
-				display: block;
-				width: 100%;
-				height: auto;
-				object-fit: cover;
-			}
+      &--tamilnadu {
+        top: 44%;
+        left: 28%;
+      }
+    }
 
-			&--visible {
-				opacity: 1;
-				transform: translateY(0);
-				pointer-events: auto;
-			}
+    &--himalaya {
+      left: 22%;
+      top: 22%;
+    }
 
-			// Position each preview near its pin
-			&--himalaya {
-				left: 50%;
-				top: 10%;
-			}
+    &--tamilnadu {
+      left: 20%;
+      top: 60%;
+    }
+  }
 
-			&--tamilnadu {
-				left: 55%;
-				top: 60%;
-			}
-		}
+  .title {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: "Roca", "Times New Roman", serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #f6c400;
+    text-shadow:
+      -2px -2px 0 #ffecdc,
+      2px 2px 0 #07340c,
+      0 0 2px #07340c;
+    z-index: 10;
+  }
 
-		// Show preview on hover
-		&:hover &__preview {
-			opacity: 1;
-			transform: translateX(-50%) translateY(0);
-		}
+  .copy {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(90%, 520px);
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.15;
+    z-index: 10;
+  }
+}
 
-		// Himalaya — upper-left quadrant of map (~30% from left, ~28% from top)
-		&--himalaya {
-			left: 22%;
-			top: 22%;
-		}
-
-		// Tamil Nadu — lower-left area (~18% from left, ~72% from top)
-		&--tamilnadu {
-			left: 20%;
-			top: 60%;
-		}
-	}
-
-	.title {
-		position: absolute;
-		top: 1rem;
-		left: 50%;
-
-		transform: translateX(-50%);
-
-		width: 100%;
-		margin: 0;
-
-		text-align: center;
-
-		font-family: "Roca", "Times New Roman", serif;
-		font-size: 2.5rem;
-		line-height: 1;
-
-		color: #f6c400;
-
-		text-shadow:
-			-2px -2px 0 #ffecdc,
-			2px 2px 0 #07340c,
-			0 0 2px #07340c;
-
-		z-index: 10;
-	}
-
-	.copy {
-		position: absolute;
-		top: 4rem;
-		left: 50%;
-
-		transform: translateX(-50%);
-
-		width: min(90%, 520px);
-		margin: 0;
-
-		text-align: center;
-
-		font-size: 1rem;
-		font-weight: 700;
-		line-height: 1.15;
-
-		z-index: 10;
-	}
+@media (max-width: 767px) {
+  .landing {
+    .pin {
+      &__preview {
+        // On mobile show mobile image, hide desktop image
+        .pin__preview-img--mobile {
+          display: block;
+        }
+        .pin__preview-img--desktop {
+          display: none;
+        }
+        transition: none;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
-	.landing {
-		padding-top: 0;
-		padding-bottom: 6rem;
+  .landing {
+    padding-top: 0;
+    padding-bottom: 6rem;
 
-		.map {
-			top: 10rem;
-		}
+    .map {
+      top: 10rem;
+    }
 
-		.title {
-			top: 2rem;
-			font-size: 4rem;
-		}
+    .title {
+      top: 2rem;
+      font-size: 4rem;
+    }
 
-		.copy {
-			top: 7rem;
+    .copy {
+      top: 7rem;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
 
-			font-size: 1.5rem;
-			line-height: 1.2;
-		}
+    .pin {
+      &__preview {
+        width: clamp(420px, 24vw, 380px);
 
-		.pin {
-			&__preview {
-				width: clamp(280px, 24vw, 380px);
-
-				&--himalaya {
-					left: 50%;
-					top: 10%;
-				}
-
-				&--tamilnadu {
-					left: 55%;
-					top: 60%;
-				}
-			}
-		}
-	}
+        &--himalaya {
+          top: 5%;
+          left: 44%;
+        }
+        &--tamilnadu {
+          top: 67%;
+          left: 37%;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
-	.landing {
-		padding-top: 5rem;
+  .landing {
+    padding-top: 5rem;
 
-		.map {
-			top: 10rem;
-		}
+    .map {
+      top: 10rem;
+    }
 
-		.title {
-			top: 0rem;
-			font-size: 5.5rem;
-		}
+    .title {
+      top: 0;
+      font-size: 5.5rem;
+    }
 
-		.copy {
-			top: 6rem;
+    .copy {
+      top: 6rem;
+      width: min(72%, 900px);
+      font-size: 2.2rem;
+      line-height: 1.1;
+    }
 
-			width: min(72%, 900px);
+    .pin {
+      &__image {
+        width: 20vw;
+        max-width: 300px;
+      }
 
-			font-size: 2.2rem;
-			line-height: 1.1;
-		}
+      &--himalaya {
+        left: 20%;
+        top: 22%;
+      }
+      &--tamilnadu {
+        left: 20%;
+        top: 56%;
+      }
 
-		.pin {
-			&__image {
-				width: 20vw;
-				max-width: 300px;
-			}
+      &__preview {
+        width: clamp(560px, 24vw, 380px);
 
-			&--himalaya {
-				left: 20%;
-				top: 22%;
-			}
-
-			&--tamilnadu {
-				left: 20%;
-				top: 56%;
-			}
-
-			&__preview {
-				width: clamp(380px, 24vw, 380px);
-
-				&--himalaya {
-					left: 50%;
-					top: 10%;
-				}
-
-				&--tamilnadu {
-					left: 55%;
-					top: 60%;
-				}
-			}
-		}
-	}
+        &--himalaya {
+          top: 5%;
+          left: 44%;
+        }
+        &--tamilnadu {
+          top: 67%;
+          left: 37%;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-	.landing {
-		padding-top: 5rem;
+  .landing {
+    padding-top: 5rem;
 
-		.map {
-			top: 10rem;
-		}
+    .map {
+      top: 10rem;
+    }
 
-		.title {
-			top: 0rem;
-			font-size: 5.5rem;
-		}
+    .title {
+      top: 0;
+      font-size: 5.5rem;
+    }
 
-		.copy {
-			top: 6rem;
+    .copy {
+      top: 6rem;
+      width: min(72%, 900px);
+      font-size: 2.2rem;
+      line-height: 1.1;
+    }
 
-			width: min(72%, 900px);
+    .pin {
+      &__image {
+        width: 20vw;
+        max-width: 300px;
+      }
 
-			font-size: 2.2rem;
-			line-height: 1.1;
-		}
+      &--himalaya {
+        left: 20%;
+        top: 22%;
+      }
+      &--tamilnadu {
+        left: 20%;
+        top: 56%;
+      }
 
-		.pin {
-			&__image {
-				width: 20vw;
-				max-width: 300px;
-			}
+      &__preview {
+        width: clamp(960px, 24vw, 380px);
 
-			&--himalaya {
-				left: 20%;
-				top: 22%;
-			}
-
-			&--tamilnadu {
-				left: 20%;
-				top: 56%;
-			}
-
-			&__preview {
-				width: clamp(460px, 24vw, 380px);
-
-				&--himalaya {
-					left: 50%;
-					top: 10%;
-				}
-
-				&--tamilnadu {
-					left: 55%;
-					top: 60%;
-				}
-			}
-		}
-	}
+        &--himalaya {
+          top: 4%;
+          left: 44%;
+        }
+        &--tamilnadu {
+          top: 67%;
+          left: 38%;
+        }
+      }
+    }
+  }
 }
