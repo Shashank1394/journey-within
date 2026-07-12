@@ -18,7 +18,7 @@ const Enquire = () => {
 
 				{/* Form card */}
 				<div className="row">
-					<div className="col-10 offset-1 col-md-8 offset-md-2">
+					<div className="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
 						<div className="form-card">
 							<h2 className="form-title">Send us a message</h2>
 

@@ -143,8 +143,10 @@ const Landing = () => {
 						<Image
 							src="/assets/upcoming-journey/himalaya.png"
 							alt="Himalaya destination"
-							width={320}
-							height={220}
+							width={800}
+							height={560}
+							sizes="(max-width: 767px) 0px, (max-width: 991px) 28vw, 24vw"
+							quality={90}
 							className="pin__preview-img pin__preview-img--desktop"
 						/>
 					</div>
@@ -161,8 +163,10 @@ const Landing = () => {
 						<Image
 							src="/assets/upcoming-journey/tamilnadu.png"
 							alt="Tamil Nadu destination"
-							width={320}
-							height={220}
+							width={800}
+							height={560}
+							sizes="(max-width: 767px) 0px, (max-width: 991px) 28vw, 24vw"
+							quality={90}
 							className="pin__preview-img pin__preview-img--desktop"
 						/>
 					</div>
