@@ -23,6 +23,7 @@ const ItineraryDays = () => {
 										alt={item.imageAlt}
 										width={400}
 										height={400}
+										style={{ objectPosition: item.imagePosition ?? "center" }}
 									/>
 								</div>
 							</div>

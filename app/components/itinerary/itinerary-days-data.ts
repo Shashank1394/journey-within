@@ -4,6 +4,8 @@ export interface ItineraryDay {
 	description: string[];
 	image: string;
 	imageAlt: string;
+	/** CSS object-position value e.g. "center top", "left 30%", "50% 20%" */
+	imagePosition?: string;
 }
 
 const itineraryDays: ItineraryDay[] = [

@@ -1,202 +1,205 @@
 .video-hero {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100svh; // full viewport height, respects mobile browser chrome
-  overflow: hidden;
-  box-shadow: 0 4rem 5.5rem rgba(20, 20, 20, 0.58);
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100svh; // full viewport height, respects mobile browser chrome
+	overflow: hidden;
+	box-shadow: 0 4rem 5.5rem rgba(20, 20, 20, 0.58);
 
-  // ── Background video ──────────────────────────────────────────
-  &__video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-  }
+	// ── Background video ──────────────────────────────────────────
+	&__video {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 0;
+	}
 
-  // ── Dark overlay ──────────────────────────────────────────────
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
-    z-index: 1;
-  }
+	// ── Dark overlay ──────────────────────────────────────────────
+	&__overlay {
+		position: absolute;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.25);
+		z-index: 1;
+	}
 
-  // ── Navbar ────────────────────────────────────────────────────
-  &__navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    transform: translateY(-120%);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 0.28s ease, opacity 0.2s ease;
-    will-change: transform;
+	// ── Navbar ────────────────────────────────────────────────────
+	&__navbar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		transform: translateY(-120%);
+		opacity: 0;
+		pointer-events: none;
+		transition:
+			transform 0.28s ease,
+			opacity 0.2s ease;
+		will-change: transform;
 
-    // Same brush background as the standard navbar
-    // background-image: url("/assets/header-brush.webp");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100% 100%;
-    min-height: 60px;
-  }
+		// Same brush background as the standard navbar
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: 100% 100%;
+		min-height: 60px;
+	}
 
-  &__navbar--visible {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
+	&__navbar--visible {
+		transform: translateY(0);
+		opacity: 1;
+		pointer-events: auto;
+	}
 
-  &__nav {
-    position: relative;
-    padding: 0;
+	&__nav {
+		position: relative;
+		padding: 0;
 
-    a {
-      text-decoration: none;
-    }
+		a {
+			text-decoration: none;
+		}
 
-    h1 {
-      position: absolute;
-      top: 10px;
-      left: 20px;
+		h1 {
+			position: absolute;
+			top: 10px;
+			left: 20px;
 
-      margin: 0;
+			margin: 0;
 
-      font-family: "Roca", "Times New Roman", serif;
-      font-size: clamp(1.6rem, 7vw, 2.2rem);
-      line-height: 1;
+			font-family: "Roca", "Times New Roman", serif;
+			font-size: clamp(1.6rem, 7vw, 2.2rem);
+			line-height: 1;
 
-      color: #f5f5f2;
-      text-shadow: 1px 1px 0 #07340c;
+			color: #f5f5f2;
+			text-shadow: 1px 1px 0 #07340c;
 
-      z-index: 10;
-    }
+			z-index: 10;
+		}
 
-    .hamburger {
-      position: absolute;
-      top: 2px;
-      right: 24px;
+		.hamburger {
+			position: absolute;
+			top: 2px;
+			right: 24px;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 
-      width: 44px;
-      height: 44px;
+			width: 44px;
+			height: 44px;
 
-      border: none;
-      background: transparent;
-      padding: 0;
+			border: none;
+			background: transparent;
+			padding: 0;
 
-      cursor: pointer;
-      color: #fff;
+			cursor: pointer;
+			color: #fff;
 
-      svg {
-        width: 24px;
-        height: 24px;
-        stroke-width: 2.5;
-      }
-    }
+			svg {
+				width: 24px;
+				height: 24px;
+				stroke-width: 2.5;
+			}
+		}
 
-    ul {
-      display: none;
+		ul {
+			display: none;
 
-      &.menu-open {
-        display: flex !important;
-        flex-direction: column;
-        gap: 1rem;
+			&.menu-open {
+				display: flex !important;
+				flex-direction: column;
+				gap: 1rem;
+				position: absolute;
+				top: 70px;
+				right: 0;
+				width: max-content;
+				min-width: 14rem;
 
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: max-content;
-        min-width: 12rem;
+				padding: 3rem 3rem;
+				margin: 0;
 
-        padding: 1.5rem;
-        margin: 0;
+				list-style: none;
+				text-align: center;
 
-        list-style: none;
-        text-align: right;
+				background-image: url("/assets/hamburger/bg.png");
+				background-size: 100%;
+				background-position: center;
+				border-radius: 12px;
 
-        background: rgba(255, 255, 255, 0.95);
-        border-radius: 12px;
+				z-index: 20;
+			}
 
-        z-index: 20;
-      }
+			li a {
+				font-family: "Roca", "Times New Roman", serif;
+				font-size: 1.25rem;
+				font-weight: 600;
 
-      li a {
-        font-family: "Roca", "Times New Roman", serif;
-        font-size: 1.25rem;
-        font-weight: 600;
+				color: #1d4f3d;
+				text-decoration: none;
 
-        color: #1d4f3d;
-        text-decoration: none;
-
-        &:hover,
-        &:focus-visible {
-          color: #11392d;
-        }
-      }
-    }
-  }
+				&:hover,
+				&:focus-visible {
+					color: #11392d;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
-  .video-hero {
-    &__nav {
-      // Keep hamburger layout at all sizes — no desktop switch
-      min-height: 100px;
+	.video-hero {
+		&__nav {
+			// Keep hamburger layout at all sizes — no desktop switch
+			min-height: 100px;
 
-      h1 {
-        font-size: clamp(2.4rem, 4vw, 4rem);
-        left: -1%;
-      }
+			h1 {
+				font-size: clamp(2.4rem, 4vw, 4rem);
+				left: -1%;
+			}
 
-      // Override the global nav ul { display: flex !important } from _navbar.scss
-      ul:not(.menu-open) {
-        display: none !important;
-      }
+			// Override the global nav ul { display: flex !important } from _navbar.scss
+			ul:not(.menu-open) {
+				display: none !important;
+			}
 
-      .hamburger {
-        display: flex;
-        // align-items: right;
-        // justify-content: right;
-        // text-align: right;     make the font appear on the right side of the screen
-        top: 1rem;
-        right: -1%;
-      }
-    }
-  }
+			.hamburger {
+				display: flex;
+				// align-items: right;
+				// justify-content: right;
+				// text-align: right;     make the font appear on the right side of the screen
+				top: 1rem;
+				right: -1%;
+			}
+		}
+	}
 }
 
 @media (min-width: 1920px) {
-  .video-hero {
-    &__nav {
-      // Keep hamburger layout at all sizes — no desktop switch
-      min-height: 100px;
+	.video-hero {
+		&__nav {
+			// Keep hamburger layout at all sizes — no desktop switch
+			min-height: 100px;
 
-      h1 {
-        font-size: clamp(2.4rem, 4vw, 4rem);
-        left: -6%;
-      }
+			h1 {
+				font-size: clamp(2.4rem, 4vw, 4rem);
+				left: -6%;
+			}
 
-      // Override the global nav ul { display: flex !important } from _navbar.scss
-      ul:not(.menu-open) {
-        display: none !important;
-      }
+			// Override the global nav ul { display: flex !important } from _navbar.scss
+			ul:not(.menu-open) {
+				display: none !important;
+			}
 
-      .hamburger {
-        display: flex;
-        // align-items: right;
-        // justify-content: right;
-        // text-align: right;     make the font appear on the right side of the screen
-        top: 1rem;
-        right: -6%;
-      }
-    }
-  }
+			.hamburger {
+				display: flex;
+				// align-items: right;
+				// justify-content: right;
+				// text-align: right;     make the font appear on the right side of the screen
+				top: 1rem;
+				right: -6%;
+			}
+		}
+	}
 }
