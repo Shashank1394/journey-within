@@ -67,7 +67,7 @@
     &__preview {
       position: absolute;
       z-index: 20;
-      width: clamp(280px, 28vw, 280px);
+      width: clamp(170px, 28vw, 280px);
 
       opacity: 0;
       pointer-events: none;
@@ -98,13 +98,13 @@
       }
 
       &--himalaya {
-        top: -14%;
-        left: 24%;
+        top: 5%;
+        left: 44%;
       }
 
       &--tamilnadu {
-        top: 44%;
-        left: 28%;
+        top: 56%;
+        left: 40%;
       }
     }
 

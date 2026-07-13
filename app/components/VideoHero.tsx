@@ -1,52 +1,23 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const VideoHero = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [navbarVisible, setNavbarVisible] = useState(true);
-	const canHideOnScroll = useRef(false);
-	const lastScrollY = useRef(0);
-	const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
 	useEffect(() => {
 		const handleScroll = () => {
-			const currentScrollY = window.scrollY;
-			const scrollingUp = currentScrollY < lastScrollY.current;
-
-			if (canHideOnScroll.current) {
-				setNavbarVisible(scrollingUp);
-			}
-
-			lastScrollY.current = currentScrollY;
+			setNavbarVisible(window.scrollY === 0);
 		};
 
-		lastScrollY.current = window.scrollY;
+		handleScroll();
 		window.addEventListener("scroll", handleScroll, { passive: true });
 
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
-
-	useEffect(() => {
-		return () => {
-			if (hideTimer.current) {
-				clearTimeout(hideTimer.current);
-			}
-		};
-	}, []);
-
-	const handleVideoPlay = () => {
-		if (hideTimer.current) {
-			return;
-		}
-
-		hideTimer.current = setTimeout(() => {
-			canHideOnScroll.current = true;
-			setNavbarVisible(false);
-		}, 3000);
-	};
 
 	return (
 		<section className="video-hero">
@@ -58,7 +29,6 @@ const VideoHero = () => {
 				muted
 				loop
 				playsInline
-				onPlay={handleVideoPlay}
 			/>
 
 			{/* Dark overlay so navbar + any text stay readable */}
