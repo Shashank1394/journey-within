@@ -1,0 +1,94 @@
+.itinerary {
+  padding: clamp(3.5rem, 7vw, 7rem) 0;
+}
+
+.itinerary__container {
+  width: min(1200px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: center;
+  min-height: var(--timeline-min-height, 30rem);
+  position: relative;
+  isolation: isolate;
+}
+
+.timeline-item__content {
+  grid-column: var(--timeline-text-column, 1 / span 6);
+  justify-self: var(--timeline-text-justify, start);
+  width: min(100%, var(--timeline-text-width, 32rem));
+  z-index: 2;
+  transform: translate(var(--timeline-text-x, 0px), var(--timeline-text-y, 0px));
+  text-align: var(--timeline-text-align, left);
+}
+
+.timeline-item__heading {
+  margin: 0 0 0.7em;
+  color: #082c0d;
+  font-family: var(--font-coming-soon), "Comic Neue", cursive;
+  font-size: clamp(1.2rem, 2.25vw, 2rem);
+  font-weight: 700;
+  line-height: 1.15;
+  text-shadow: 0.45px 0 0 currentColor, -0.45px 0 0 currentColor, 0 0.45px 0 currentColor, 0 -0.45px 0 currentColor;
+}
+
+.timeline-item__separator {
+  color: #161616;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+.timeline-item__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #161616;
+  font-family: var(--font-coming-soon), "Comic Neue", cursive;
+  font-size: clamp(1rem, 1.85vw, 1.55rem);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.timeline-item__list li { margin: 0; }
+.timeline-item__list li::before { content: "- "; }
+
+.timeline-item__image {
+  grid-column: var(--timeline-image-column, 7 / span 6);
+  justify-self: var(--timeline-image-justify, center);
+  width: min(100%, var(--timeline-image-width, 30rem));
+  transform: translate(var(--timeline-image-x, 0px), var(--timeline-image-y, 0px));
+  z-index: 1;
+}
+
+.timeline-item__illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
+  .itinerary { padding: 2.5rem 0; }
+  .itinerary__container { width: min(100% - 2rem, 44rem); }
+
+  .timeline-item {
+    min-height: 0;
+    margin-bottom: clamp(2.5rem, 9vw, 4.5rem);
+    row-gap: 1rem;
+  }
+
+  .timeline-item__content,
+  .timeline-item__image {
+    grid-column: 1 / -1;
+    width: min(100%, 34rem);
+    transform: none;
+  }
+
+  .timeline-item__content { justify-self: start; text-align: left; }
+  .timeline-item__image { justify-self: center; max-width: 27rem; }
+  .timeline-item__heading { font-size: clamp(1.25rem, 5.3vw, 1.7rem); }
+  .timeline-item__list { font-size: clamp(1rem, 4.4vw, 1.3rem); }
+}

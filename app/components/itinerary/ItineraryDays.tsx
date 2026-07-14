@@ -2,7 +2,7 @@
 
 import type { CSSProperties } from "react";
 import Image from "next/image";
-import itineraryDays from "./itinerary-days-data";
+import itineraryDays from "./itinerary-data";
 
 const offsetStyle = (offset?: { x?: string; y?: string }): CSSProperties =>
   ({
