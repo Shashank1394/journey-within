@@ -40,8 +40,8 @@ const itineraryDays: ItineraryDay[] = [
     ],
     layout: {
       minHeight: "31rem",
-      ...leftText,
-      image: { ...leftText.image, y: "2rem" },
+      text: { ...leftText.text, maxWidth: "24rem", y: "-15%", x: "60%" },
+      image: { ...leftText.image, y: "-48%", x: "0%", maxWidth: "70%" },
     },
   },
   {
@@ -58,8 +58,13 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "33rem",
       ...rightText,
-      text: { ...rightText.text, maxWidth: "34rem", x: "-0.5rem", y: "-1rem" },
-      image: { ...rightText.image, maxWidth: "23rem", y: "-26rem" },
+      text: { ...rightText.text, maxWidth: "100%", x: "-5%", y: "-40%" },
+      image: {
+        ...rightText.image,
+        maxWidth: "70%",
+        x: "-6%",
+        y: "-82%",
+      },
     },
   },
   {
@@ -75,10 +80,23 @@ const itineraryDays: ItineraryDay[] = [
     ],
     layout: {
       minHeight: "31rem",
-      text: { ...leftText.text, y: "-35rem" },
-      image: { ...leftText.image, maxWidth: "34rem", y: "-45.5rem" },
+      text: { ...leftText.text, y: "-30rem", x: "2rem" },
+      image: { ...leftText.image, maxWidth: "34rem", y: "-26rem" },
     },
   },
+
+  //   --timeline-min-height: 31rem;
+  // --timeline-text-column: 1 / span 6;
+  // --timeline-text-width: 31rem;
+  // --timeline-text-x: 0px;
+  // --timeline-text-y: -30rem;
+  // --timeline-text-align: left;
+  // --timeline-text-justify: start;
+  // --timeline-image-column: 7 / span 6;
+  // --timeline-image-width: 34rem;
+  // --timeline-image-x: 1rem;
+  // --timeline-image-y: -26rem;
+  // --timeline-image-justify: end;
   {
     id: 4,
     day: "Day 4",
@@ -93,15 +111,29 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "31rem",
       ...rightText,
-      text: { ...rightText.text, x: "-1rem", y: "1rem" },
+      text: { ...rightText.text, x: "-2rem", y: "-32rem" },
       image: {
         ...rightText.image,
-        maxWidth: "28rem",
-        x: "-0.5rem",
-        y: "-1rem",
+        maxWidth: "34rem",
+        x: "0rem",
+        y: "-52rem",
       },
     },
   },
+  //     --timeline-min-height: 31rem;
+  //     --timeline-text-column: 6 / span 7;
+  //     --timeline-text-width: 34rem;
+  //     --timeline-text-x: -2rem;
+  //     --timeline-text-y: -32rem;
+  //     --timeline-text-align: right;
+  //     --timeline-text-justify: end;
+  //     --timeline-image-column
+  // 1 / span 5
+  // : 1 / span 5;
+  //     --timeline-image-width: 34rem;
+  //     --timeline-image-x: 0rem;
+  //     --timeline-image-y: -52rem;
+  //     --timeline-image-justify: start;
   {
     id: 5,
     day: "Day 5",
@@ -110,15 +142,27 @@ const itineraryDays: ItineraryDay[] = [
     imageAlt: "Cable car over Himalayan mountains",
     description: [
       "Travel from Badrinath to Chopta (around 7 hours).",
-      "Visit the Gopinath Temple along the way.",
+      "The long journey will be split in two with a visit to the Gopinath Temple along the way.",
       "Overnight stay at The Aipan Resort, the accommodation of our guide.",
     ],
     layout: {
       minHeight: "31rem",
-      ...leftText,
-      image: { ...leftText.image, maxWidth: "29rem" },
+      text: { ...leftText.text, y: "-53rem", x: "2rem" },
+      image: { ...leftText.image, maxWidth: "29rem", y: "-46rem" },
     },
   },
+  //   --timeline-min-height: 31rem;
+  // --timeline-text-column: 1 / span 6;
+  // --timeline-text-width: 33rem;
+  // --timeline-text-x: 2rem;
+  // --timeline-text-y: -53rem;
+  // --timeline-text-align: left;
+  // --timeline-text-justify: start;
+  // --timeline-image-column: 7 / span 6;
+  // --timeline-image-width: 29rem;
+  // --timeline-image-x: 0rem;
+  // --timeline-image-y: -46rem;
+  // --timeline-image-justify: end;
   {
     id: 6,
     day: "Day 6",
@@ -127,11 +171,27 @@ const itineraryDays: ItineraryDay[] = [
     imageAlt: "Valley of Flowers trek",
     description: [
       "Rest day at The Aipan Resort.",
-      "Morning connection with the local inhabitants.",
-      "Afternoon Family Constellations session.",
+      "In the morning we will connect with the local inhabitatnts of the area.",
+      "In the afternoon a Family Constellations session will be held.",
     ],
-    layout: { minHeight: "28rem", ...rightText },
+    layout: {
+      minHeight: "28rem",
+      text: { ...rightText.text, maxWidth: "38rem", y: "-40rem", x: "-2rem" },
+      image: { ...rightText.image, y: "-70rem", x: "2rem" },
+    },
   },
+  //   --timeline-min-height: 28rem;
+  // --timeline-text-column: 6 / span 7;
+  // --timeline-text-width: 32rem;
+  // --timeline-text-x: -2rem;
+  // --timeline-text-y: -40rem;
+  // --timeline-text-align: right;
+  // --timeline-text-justify: end;
+  // --timeline-image-column: 1 / span 5;
+  // --timeline-image-width: 24rem;
+  // --timeline-image-x: 2rem;
+  // --timeline-image-y: -70rem;
+  // --timeline-image-justify: start;
   {
     id: 7,
     day: "Day 7",
@@ -139,12 +199,28 @@ const itineraryDays: ItineraryDay[] = [
     image: "/assets/itinerary/7.png",
     imageAlt: "Trekking in the Himalayas",
     description: [
-      "Trek to Tungnath Mandir, the highest Shiva temple in the world (8 km, +800 m).",
-      "Optional trek to Chandrashila viewpoint (3690 m).",
+      "Trekking day to the revered Tungnath Mandir, the highest Shiva Temple in the world (8 km, +800 m).",
+      "If we have enough strength, we may continue up to the beautiful viewpoint of Chandrashila (3690 m).",
       "Overnight stay at The Aipan Resort.",
     ],
-    layout: { minHeight: "30rem", ...leftText },
+    layout: {
+      minHeight: "30rem",
+      text: { ...leftText.text, x: "3rem", y: "-76rem" },
+      image: { ...leftText.image, maxWidth: "70%", x: "1rem", y: "-77rem" },
+    },
   },
+  // --timeline-min-height: 30rem;
+  // --timeline-text-column: 1 / span 6;
+  // --timeline-text-width: 31rem;
+  // --timeline-text-x: 3rem;
+  // --timeline-text-y: -76rem;
+  // --timeline-text-align: left;
+  // --timeline-text-justify: start;
+  // --timeline-image-column: 7 / span 6;
+  // --timeline-image-width: 70%;
+  // --timeline-image-x: 1rem;
+  // --timeline-image-y: -77rem;
+  // --timeline-image-justify: end;
   {
     id: 8,
     day: "Day 8",
@@ -152,12 +228,24 @@ const itineraryDays: ItineraryDay[] = [
     image: "/assets/itinerary/8.png",
     imageAlt: "Aipan art workshop",
     description: [
-      "Rest day at The Aipan Resort.",
-      "Morning cooking class and Aipan art workshop.",
-      "Afternoon Family Constellations session.",
+      "Rest day at The Aipan Resort",
+      "In the morning, a cooking class and an Aipan art workshop will be organized",
+      "In the afternoon, we will hold another Family Constellations session.",
     ],
-    layout: { minHeight: "28rem", ...rightText },
+    layout: {
+      minHeight: "28rem",
+      text: { ...rightText.text, maxWidth: "44rem", x: "-5rem", y: "-74rem" },
+      image: { ...rightText.image, x: "-6rem", y: "-94rem" },
+    },
   },
+  //   --timeline-text-x: -5rem;
+  // --timeline-text-y: -74rem;
+  // --timeline-text-align: right;
+  // --timeline-text-justify: end;
+  // --timeline-image-column: 1 / span 5;
+  // --timeline-image-width: 24rem;
+  // --timeline-image-x: -6rem;
+  // --timeline-image-y: -94rem;
   {
     id: 9,
     day: "Day 9",
@@ -165,12 +253,25 @@ const itineraryDays: ItineraryDay[] = [
     image: "/assets/itinerary/9.png",
     imageAlt: "Journey to Ransi",
     description: [
-      "Journey to Ransi with a visit to Omkareshwar Temple (3 hours).",
-      "Trek from Ransi to Gaundhar Village (7.5 km, +500 m / -300 m).",
+      "Journey to Ransi with a visit to Omkareshwar Temple (3 hours)",
+      "Trek from Ransi to Gaundhar Village (7.5 km, 500 m up, 300 m down)",
       "Overnight stay in Khadara (2000 m).",
     ],
-    layout: { minHeight: "30rem", ...leftText },
+    layout: {
+      minHeight: "30rem",
+      text: { ...leftText.text, maxWidth: "26rem", x: "2rem", y: "-96rem" },
+      image: { ...leftText.image, maxWidth: "70%", x: "-6rem", y: "-102rem" },
+    },
   },
+  // --timeline-text-width: 31rem;
+  //   --timeline-text-x: 2rem;
+  //   --timeline-text-y: -96rem;
+  //   --timeline-text-align: left;
+  //   --timeline-text-justify: start;
+  //   --timeline-image-column: 7 / span 6;
+  //   --timeline-image-width: 70%;
+  //   --timeline-image-x: -6rem;
+  //   --timeline-image-y: -102rem;
   {
     id: 10,
     day: "Day 10",
