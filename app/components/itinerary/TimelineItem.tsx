@@ -35,17 +35,19 @@ export default function TimelineItem({ day }: Props) {
       style={layoutStyle(day)}
     >
       <div className="timeline-item__content">
-        <h3 className="timeline-item__heading">
-          <span className="timeline-item__day">{day.day}</span>
-          <span className="timeline-item__separator"> | </span>
-          <span className="timeline-item__date">{day.date}</span>
-        </h3>
+        <div className="timeline-item__copy">
+          <h3 className="timeline-item__heading">
+            <span className="timeline-item__day">{day.day}</span>
+            <span className="timeline-item__separator"> | </span>
+            <span className="timeline-item__date">{day.date}</span>
+          </h3>
 
-        <ul className="timeline-item__list">
-          {day.description.map((line, index) => (
-            <li key={index}>{line}</li>
-          ))}
-        </ul>
+          <ul className="timeline-item__list">
+            {day.description.map((line, index) => (
+              <li key={index}>{line}</li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       {day.image && (

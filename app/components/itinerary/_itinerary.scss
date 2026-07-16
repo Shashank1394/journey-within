@@ -28,6 +28,21 @@
   font-size: clamp(0.85rem, 1.5cqw, 1.25rem);
 }
 
+@media (max-width: 900px) {
+  .itinerary-scaled-days__canvas .timeline-item__heading {
+    font-size: clamp(1.4rem, 2.1cqw, 1.8rem);
+  }
+
+  .itinerary-scaled-days__canvas .timeline-item__list {
+    font-size: clamp(1.2rem, 1.7cqw, 1.45rem);
+  }
+
+  .itinerary-scaled-days__canvas .timeline-item__copy {
+    transform: scale(1.25);
+    transform-origin: var(--timeline-text-align, left) top;
+  }
+}
+
 .timeline-item {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
