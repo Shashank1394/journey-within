@@ -42,18 +42,25 @@
   // ── Card — ::before renders the brush, content sits on top ────
   &__card {
     position: relative;
-    // Enough height so the brush fills it and circles have room below
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     padding: clamp(3rem, 8vw, 6rem) 0 clamp(5rem, 12vw, 9rem);
 
-    // Brush stroke as a pseudo-element behind everything
     &::before {
       content: "";
       position: absolute;
-      inset: -80% -25% -100% -40%;
-      // background-image: url("/assets/itinerary/green-bg.png");
-      background-size: 100% 100%;
+
+      /* Adjust these until it hugs the text nicely */
+      inset: -100% 0% -100% -35%;
+
+      background-image: url("/assets/itinerary/green-bg.png");
       background-repeat: no-repeat;
       background-position: center;
+      background-size: contain;
+
       z-index: 0;
       pointer-events: none;
     }
@@ -66,7 +73,7 @@
 
     margin: 0 auto;
     width: 65%;
-    top: 10;
+    // top: 10;
 
     text-align: center;
 
@@ -74,7 +81,7 @@
     font-size: 0.65rem;
     font-weight: 700;
     line-height: 1.7;
-    color: #000;
+    color: #fff;
   }
 
   // ── Circles ────────────────────────────────────────────────────
@@ -149,6 +156,12 @@
     &__body {
       font-size: 1.1rem;
     }
+
+    &__card {
+      &::before {
+        inset: -100% 0% -100% -35%;
+      }
+    }
   }
 }
 
@@ -169,7 +182,7 @@
 
     &__card {
       &::before {
-        inset: -80% 0% -100% -15%;
+        inset: -100% 0% -100% -25%;
       }
     }
   }
