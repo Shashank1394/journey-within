@@ -407,13 +407,13 @@ const itineraryDays: ItineraryDay[] = [
     id: 15,
     day: "Day 15",
     date: "24 Oct",
-    // image: "",
+    image: "/assets/itinerary/15.png",
     imageAlt: "Departure from Rishikesh",
     description: ["Return home from Rishikesh airport.", "Bye bye Himalayas!"],
     layout: {
       minHeight: "26rem",
       text: { ...leftText.text, x: "25rem", y: "-170rem" },
-      image: { ...leftText.image, maxWidth: "29rem" },
+      image: { ...leftText.image, maxWidth: "70%", x: "0rem", y: "-180rem" },
     },
   },
   // --timeline-text-x: 25rem;
