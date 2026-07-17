@@ -342,7 +342,7 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "27rem",
       text: { ...rightText.text, x: "-5rem", y: "-112rem" },
-      image: { ...rightText.image, maxWidth: "100%", x: "16rem", y: "-124rem" },
+      image: { ...rightText.image, maxWidth: "150%", x: "3rem", y: "-128rem" },
     },
   },
   //   --timeline-min-height: 27rem;
@@ -353,9 +353,9 @@ const itineraryDays: ItineraryDay[] = [
   // --timeline-text-align: right;
   // --timeline-text-justify: end;
   // --timeline-image-column: 1 / span 5;
-  // --timeline-image-width: 100%;
-  // --timeline-image-x: 16rem;
-  // --timeline-image-y: -130rem;
+  // --timeline-image-width: 150%;
+  //     --timeline-image-x: 3rem;
+  //     --timeline-image-y: -128rem;
   // --timeline-image-justify: start;
   {
     id: 13,

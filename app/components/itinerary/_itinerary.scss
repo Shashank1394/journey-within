@@ -105,7 +105,7 @@
 .timeline-item__image {
   grid-column: var(--timeline-image-column, 7 / span 6);
   justify-self: var(--timeline-image-justify, center);
-  width: min(100%, var(--timeline-image-width, 30rem));
+  width: var(--timeline-image-width, 30rem);
   transform: translate(
     var(--timeline-image-x, 0px),
     var(--timeline-image-y, 0px)
