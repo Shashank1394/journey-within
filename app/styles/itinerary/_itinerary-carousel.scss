@@ -4,7 +4,7 @@
 
 .itinerary-carousel__inner {
   position: relative;
-  width: min(100% - 1.5rem, 24rem);
+  width: min(100% - 1rem, 31rem);
   margin: 0 auto;
   padding-bottom: 1.35rem;
 }
@@ -27,18 +27,18 @@
 
   &--0,
   &--2 {
-    width: clamp(6.6rem, 29vw, 9rem);
+    width: clamp(7.4rem, 32vw, 10rem);
   }
 
   &--1 {
-    width: clamp(5.5rem, 23vw, 7.5rem);
+    width: clamp(6.15rem, 26vw, 8.4rem);
   }
 }
 
 .itinerary-carousel__control {
   position: absolute;
   bottom: 0;
-  width: clamp(3.5rem, 16vw, 4.5rem);
+  width: clamp(3.9rem, 18vw, 5rem);
   padding: 0;
   border: 0;
   background: transparent;
@@ -71,23 +71,23 @@
   }
 
   .itinerary-carousel__inner {
-    width: min(100% - 3rem, 36rem);
+    width: min(100% - 3rem, 48rem);
     padding-bottom: 1.75rem;
   }
 
   .itinerary-carousel__slide {
     &--0,
     &--2 {
-      width: 10.5rem;
+      width: 11.75rem;
     }
 
     &--1 {
-      width: 8.5rem;
+      width: 9.5rem;
     }
   }
 
   .itinerary-carousel__control {
-    width: 5rem;
+    width: 5.6rem;
   }
 }
 
@@ -97,51 +97,34 @@
   }
 
   .itinerary-carousel__inner {
-    width: min(100% - 3rem, 45rem);
+    width: min(100% - 3rem, 60rem);
   }
 
   .itinerary-carousel__slide {
     &--0,
     &--2 {
-      width: 13rem;
+      width: 14.5rem;
     }
 
     &--1 {
-      width: 10.5rem;
+      width: 11.75rem;
     }
   }
 
   .itinerary-carousel__control {
-    width: 6rem;
+    width: 6.7rem;
   }
 }
 
 @media (min-width: 1200px) {
   .itinerary-carousel__inner {
-    width: min(100% - 3rem, 53rem);
+    width: min(100% - 3rem, 70rem);
   }
 
   .itinerary-carousel__slide {
     &--0,
     &--2 {
-      width: 15rem;
-    }
-
-    &--1 {
-      width: 12rem;
-    }
-  }
-}
-
-@media (min-width: 1440px) {
-  .itinerary-carousel__inner {
-    width: min(100% - 3rem, 59rem);
-  }
-
-  .itinerary-carousel__slide {
-    &--0,
-    &--2 {
-      width: 17rem;
+      width: 16.8rem;
     }
 
     &--1 {
@@ -150,14 +133,9 @@
   }
 }
 
-@media (min-width: 1920px) {
-  .itinerary-carousel {
-    padding: 3rem 0 3.5rem;
-  }
-
+@media (min-width: 1440px) {
   .itinerary-carousel__inner {
-    width: min(100% - 3rem, 68rem);
-    padding-bottom: 2rem;
+    width: min(100% - 3rem, 78rem);
   }
 
   .itinerary-carousel__slide {
@@ -170,8 +148,30 @@
       width: 15rem;
     }
   }
+}
+
+@media (min-width: 1920px) {
+  .itinerary-carousel {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .itinerary-carousel__inner {
+    width: min(100% - 3rem, 90rem);
+    padding-bottom: 2rem;
+  }
+
+  .itinerary-carousel__slide {
+    &--0,
+    &--2 {
+      width: 21.25rem;
+    }
+
+    &--1 {
+      width: 16.8rem;
+    }
+  }
 
   .itinerary-carousel__control {
-    width: 7rem;
+    width: 7.85rem;
   }
 }

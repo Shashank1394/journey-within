@@ -22,7 +22,9 @@ const getTimelineHeight = (viewportWidth: number) => {
   const lastStop = HEIGHT_STOPS.at(-1)!;
 
   if (viewportWidth <= firstStop.width) return firstStop.height;
-  if (viewportWidth >= lastStop.width) return lastStop.height;
+  if (viewportWidth >= lastStop.width) {
+    return lastStop.height * (viewportWidth / lastStop.width);
+  }
 
   const upperIndex = HEIGHT_STOPS.findIndex(
     (stop) => stop.width >= viewportWidth,
