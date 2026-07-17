@@ -285,7 +285,7 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "28rem",
       text: { ...rightText.text, maxWidth: "20rem", x: "-5rem", y: "-100rem" },
-      image: { ...rightText.image, maxWidth: "100%", x: "16rem", y: "-108rem" },
+      image: { ...rightText.image, maxWidth: "100%", x: "16rem", y: "-114rem" },
     },
   },
   //   --timeline-min-height: 28rem;
