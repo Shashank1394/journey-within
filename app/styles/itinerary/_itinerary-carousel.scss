@@ -1,0 +1,177 @@
+.itinerary-carousel {
+  padding: 1.5rem 0 2rem;
+}
+
+.itinerary-carousel__inner {
+  position: relative;
+  width: min(100% - 1.5rem, 24rem);
+  margin: 0 auto;
+  padding-bottom: 1.35rem;
+}
+
+.itinerary-carousel__slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.15rem, 1.5vw, 0.75rem);
+}
+
+.itinerary-carousel__slide {
+  flex: 0 0 auto;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &--0,
+  &--2 {
+    width: clamp(6.6rem, 29vw, 9rem);
+  }
+
+  &--1 {
+    width: clamp(5.5rem, 23vw, 7.5rem);
+  }
+}
+
+.itinerary-carousel__control {
+  position: absolute;
+  bottom: 0;
+  width: clamp(3.5rem, 16vw, 4.5rem);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  line-height: 0;
+  cursor: pointer;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #07340c;
+    outline-offset: 0.25rem;
+  }
+
+  &--previous {
+    left: 0.75rem;
+  }
+
+  &--next {
+    right: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .itinerary-carousel {
+    padding: 2rem 0 2.5rem;
+  }
+
+  .itinerary-carousel__inner {
+    width: min(100% - 3rem, 36rem);
+    padding-bottom: 1.75rem;
+  }
+
+  .itinerary-carousel__slide {
+    &--0,
+    &--2 {
+      width: 10.5rem;
+    }
+
+    &--1 {
+      width: 8.5rem;
+    }
+  }
+
+  .itinerary-carousel__control {
+    width: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .itinerary-carousel {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .itinerary-carousel__inner {
+    width: min(100% - 3rem, 45rem);
+  }
+
+  .itinerary-carousel__slide {
+    &--0,
+    &--2 {
+      width: 13rem;
+    }
+
+    &--1 {
+      width: 10.5rem;
+    }
+  }
+
+  .itinerary-carousel__control {
+    width: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .itinerary-carousel__inner {
+    width: min(100% - 3rem, 53rem);
+  }
+
+  .itinerary-carousel__slide {
+    &--0,
+    &--2 {
+      width: 15rem;
+    }
+
+    &--1 {
+      width: 12rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .itinerary-carousel__inner {
+    width: min(100% - 3rem, 59rem);
+  }
+
+  .itinerary-carousel__slide {
+    &--0,
+    &--2 {
+      width: 17rem;
+    }
+
+    &--1 {
+      width: 13.5rem;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .itinerary-carousel {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .itinerary-carousel__inner {
+    width: min(100% - 3rem, 68rem);
+    padding-bottom: 2rem;
+  }
+
+  .itinerary-carousel__slide {
+    &--0,
+    &--2 {
+      width: 19rem;
+    }
+
+    &--1 {
+      width: 15rem;
+    }
+  }
+
+  .itinerary-carousel__control {
+    width: 7rem;
+  }
+}
