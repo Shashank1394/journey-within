@@ -4,8 +4,8 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 
 const DESIGN_WIDTH = 1200;
 const HEIGHT_STOPS = [
-  { width: 390, height: 2100 },
-  { width: 546, height: 2200 },
+  { width: 400, height: 1650 },
+  { width: 546, height: 2300 },
   { width: 768, height: 3200 },
   { width: 992, height: 4000 },
   { width: 1200, height: 4900 },
