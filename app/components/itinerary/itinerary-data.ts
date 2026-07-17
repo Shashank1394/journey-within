@@ -279,11 +279,27 @@ const itineraryDays: ItineraryDay[] = [
     image: "/assets/itinerary/10.png",
     imageAlt: "Madhyamaheshwar trek",
     description: [
-      "Great trek to Madhyamaheshwar Temple (7.5 km, +1200 m elevation gain, approximately 8 AM–5 PM).",
-      "Overnight stay in a traditional Himalayan mountain lodge near the temple (3500 m).",
+      "The day of the great trek to the Madhyamaheshwar Temple has arrived. (7.5km, +1,200m elevation gain) 8:00 AM - 5:00 PM",
+      "Overnight stay in a traditional Himalayan mountain lodge near the temple (3,500 m).",
     ],
-    layout: { minHeight: "28rem", ...rightText },
+    layout: {
+      minHeight: "28rem",
+      text: { ...rightText.text, maxWidth: "20rem", x: "-5rem", y: "-100rem" },
+      image: { ...rightText.image, maxWidth: "100%", x: "16rem", y: "-108rem" },
+    },
   },
+  //   --timeline-min-height: 28rem;
+  // --timeline-text-column: 6 / span 7;
+  // --timeline-text-width: 32rem;
+  // --timeline-text-x: -5rem;
+  // --timeline-text-y: -100rem;
+  // --timeline-text-align: right;
+  // --timeline-text-justify: end;
+  // --timeline-image-column: 1 / span 5;
+  // --timeline-image-width: 100%;
+  // --timeline-image-x: 16rem;
+  // --timeline-image-justify: start;
+  // --timeline-image-y: -108rem;
   {
     id: 11,
     day: "Day 11",
@@ -293,10 +309,26 @@ const itineraryDays: ItineraryDay[] = [
     description: [
       "Trek to Boodha Madhyamaheshwar (~6 km, ±300 m).",
       "Meditation and Aarti at high altitude.",
-      "Overnight stay near Madhyamaheshwar (3500 m).",
+      "Overnight stay in a Himalayan shelter near Madhyamaheshwar (3500 m)",
     ],
-    layout: { minHeight: "30rem", ...leftText },
+    layout: {
+      minHeight: "30rem",
+      text: { ...leftText.text, maxWidth: "31rem", x: "6rem", y: "-124rem" },
+      image: { ...leftText.image, x: "1rem", y: "-118rem" },
+    },
   },
+  //   --timeline-min-height: 30rem;
+  // --timeline-text-column: 1 / span 6;
+  // --timeline-text-width: 31rem;
+  // --timeline-text-x: 6rem;
+  // --timeline-text-y: -124rem;
+  // --timeline-text-align: left;
+  // --timeline-text-justify: start;
+  // --timeline-image-column: 7 / span 6;
+  // --timeline-image-width: 30rem;
+  // --timeline-image-x: 1rem;
+  // --timeline-image-y: -118rem;
+  // --timeline-image-justify: end;
   {
     id: 12,
     day: "Day 12",
@@ -307,8 +339,24 @@ const itineraryDays: ItineraryDay[] = [
       "Downhill trek back to Gaundhar Village (15 km, -1800 m).",
       "Overnight stay at The Aipan Resort.",
     ],
-    layout: { minHeight: "27rem", ...rightText },
+    layout: {
+      minHeight: "27rem",
+      text: { ...rightText.text, x: "-5rem", y: "-112rem" },
+      image: { ...rightText.image, maxWidth: "100%", x: "16rem", y: "-124rem" },
+    },
   },
+  //   --timeline-min-height: 27rem;
+  // --timeline-text-column: 6 / span 7;
+  // --timeline-text-width: 20rem;
+  // --timeline-text-x: -5rem;
+  // --timeline-text-y: -112rem;
+  // --timeline-text-align: right;
+  // --timeline-text-justify: end;
+  // --timeline-image-column: 1 / span 5;
+  // --timeline-image-width: 100%;
+  // --timeline-image-x: 16rem;
+  // --timeline-image-y: -130rem;
+  // --timeline-image-justify: start;
   {
     id: 13,
     day: "Day 13",
@@ -316,10 +364,13 @@ const itineraryDays: ItineraryDay[] = [
     // image: "",
     imageAlt: "Journey back to Rishikesh",
     description: [
-      "Travel back to Rishikesh (around 7 hours), visiting the suspended Dari Devi Temple on the way.",
+      "Travel day back to Rishikesh (7 hours), with a visit to the beautiful suspended temple of Dari Devi along the way.",
       "Well-deserved rest in Rishikesh.",
     ],
-    layout: { minHeight: "28rem", ...leftText },
+    layout: {
+      minHeight: "28rem",
+      text: { ...leftText.text, maxWidth: "24rem", x: "5rem", y: "-142rem" },
+    },
   },
   {
     id: 14,
@@ -332,8 +383,26 @@ const itineraryDays: ItineraryDay[] = [
       "Beautiful Ganga Aarti in the afternoon.",
       "Overnight stay in Rishikesh.",
     ],
-    layout: { minHeight: "28rem", ...rightText },
+    layout: {
+      minHeight: "28rem",
+      text: { ...rightText.text, x: "-20rem", y: "-148rem" },
+      image: { ...rightText.image, maxWidth: "100%", x: "-5rem", y: "-162rem" },
+    },
   },
+  //   --timeline-min-height: 28rem;
+  //     --timeline-text-column: 6 / span 7;
+  //     --timeline-text-width: 32rem;
+  //     --timeline-text-x: -20rem;
+  //     --timeline-text-y: -148rem;
+  //     --timeline-text-align
+  // right
+  // : right;
+  //     --timeline-text-justify: end;
+  //     --timeline-image-column: 1 / span 5;
+  //     --timeline-image-width: 100%;
+  //     --timeline-image-x: -5rem;
+  //     --timeline-image-y: -162rem;
+  //     --timeline-image-justify: start;
   {
     id: 15,
     day: "Day 15",
@@ -343,10 +412,12 @@ const itineraryDays: ItineraryDay[] = [
     description: ["Return home from Rishikesh airport.", "Bye bye Himalayas!"],
     layout: {
       minHeight: "26rem",
-      ...leftText,
+      text: { ...leftText.text, x: "25rem", y: "-170rem" },
       image: { ...leftText.image, maxWidth: "29rem" },
     },
   },
+  // --timeline-text-x: 25rem;
+  //   --timeline-text-y: -170rem;
 ];
 
 export default itineraryDays;
