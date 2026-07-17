@@ -10,7 +10,7 @@ const HEIGHT_STOPS = [
   { width: 992, height: 4000 },
   { width: 1200, height: 4900 },
   { width: 1440, height: 5900 },
-  { width: 1920, height: 8000 },
+  { width: 1920, height: 8400 },
 ] as const;
 
 interface Props {
