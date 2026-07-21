@@ -9,7 +9,6 @@ const HEIGHT_STOPS = [
   { width: 768, height: 3200 },
   { width: 992, height: 4000 },
   { width: 1200, height: 4900 },
-  // { width: 1408, height: 5200 },
   { width: 1440, height: 6000 },
   { width: 1920, height: 8400 },
 ] as const;
