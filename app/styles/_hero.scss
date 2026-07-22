@@ -259,11 +259,14 @@
     .copy {
       max-width: 760px;
       font-size: 1.8rem;
+      padding: 1.4rem 0;
     }
 
     .copy.accent {
       max-width: 400px;
       font-size: 1.8rem;
+      margin-top: 0;
+      padding: 0;
     }
 
     .kicker {
