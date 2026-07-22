@@ -81,7 +81,7 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "31rem",
       text: { ...leftText.text, y: "-30rem", x: "2rem" },
-      image: { ...leftText.image, maxWidth: "34rem", y: "-26rem" },
+      image: { ...leftText.image, maxWidth: "38rem", y: "-35rem" },
     },
   },
 
@@ -148,7 +148,7 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "31rem",
       text: { ...leftText.text, y: "-53rem", x: "2rem" },
-      image: { ...leftText.image, maxWidth: "29rem", y: "-46rem" },
+      image: { ...leftText.image, maxWidth: "26rem", y: "-46rem" },
     },
   },
   //   --timeline-min-height: 31rem;
@@ -235,7 +235,7 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "28rem",
       text: { ...rightText.text, maxWidth: "44rem", x: "-5rem", y: "-74rem" },
-      image: { ...rightText.image, x: "-6rem", y: "-94rem" },
+      image: { ...rightText.image, x: "-6rem", y: "-90rem", maxWidth: "22rem" },
     },
   },
   //   --timeline-text-x: -5rem;
@@ -260,7 +260,7 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "30rem",
       text: { ...leftText.text, maxWidth: "26rem", x: "2rem", y: "-96rem" },
-      image: { ...leftText.image, maxWidth: "70%", x: "-6rem", y: "-102rem" },
+      image: { ...leftText.image, maxWidth: "65%", x: "-6rem", y: "-102rem" },
     },
   },
   // --timeline-text-width: 31rem;
