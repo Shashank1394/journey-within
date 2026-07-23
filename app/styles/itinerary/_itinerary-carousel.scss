@@ -1,177 +1,238 @@
 .itinerary-carousel {
-  padding: 1.5rem 0 2rem;
+	padding: 1.5rem 0 2rem;
 }
 
 .itinerary-carousel__inner {
-  position: relative;
-  width: min(100% - 1rem, 31rem);
-  margin: 0 auto;
-  padding-bottom: 1.35rem;
+	position: relative;
+	width: min(100% - 1rem, 31rem);
+	margin: 0 auto;
+	padding-bottom: 1.35rem;
 }
 
 .itinerary-carousel__slides {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: clamp(0.15rem, 1.5vw, 0.75rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: clamp(0.15rem, 1.5vw, 0.75rem);
 }
 
 .itinerary-carousel__slide {
-  flex: 0 0 auto;
+	flex: 0 0 auto;
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 
-  &--0,
-  &--2 {
-    width: clamp(7.4rem, 32vw, 10rem);
-  }
+	&--0,
+	&--2 {
+		width: clamp(7.4rem, 32vw, 10rem);
+	}
 
-  &--1 {
-    width: clamp(6.15rem, 26vw, 8.4rem);
-  }
+	&--1 {
+		width: clamp(6.15rem, 26vw, 8.4rem);
+	}
 }
 
 .itinerary-carousel__control {
-  position: absolute;
-  bottom: 0;
-  width: clamp(3.9rem, 18vw, 5rem);
-  padding: 0;
-  border: 0;
-  background: transparent;
-  line-height: 0;
-  cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	width: clamp(3.9rem, 18vw, 5rem);
+	padding: 0;
+	border: 0;
+	background: transparent;
+	line-height: 0;
+	cursor: pointer;
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 
-  &:focus-visible {
-    outline: 2px solid #07340c;
-    outline-offset: 0.25rem;
-  }
+	&:focus-visible {
+		outline: 2px solid #07340c;
+		outline-offset: 0.25rem;
+	}
 
-  &--previous {
-    left: 0.75rem;
-  }
+	&--previous {
+		left: 0.75rem;
+	}
 
-  &--next {
-    right: 0.75rem;
-  }
+	&--next {
+		right: 0.75rem;
+	}
 }
 
 @media (min-width: 768px) {
-  .itinerary-carousel {
-    padding: 2rem 0 2.5rem;
-  }
+	.itinerary-carousel {
+		padding: 2rem 0 2.5rem;
+	}
 
-  .itinerary-carousel__inner {
-    width: min(100% - 3rem, 48rem);
-    padding-bottom: 1.75rem;
-  }
+	.itinerary-carousel__inner {
+		width: min(100% - 3rem, 48rem);
+		padding-bottom: 1.75rem;
+	}
 
-  .itinerary-carousel__slide {
-    &--0,
-    &--2 {
-      width: 11.75rem;
-    }
+	.itinerary-carousel__slide {
+		&--0,
+		&--2 {
+			width: 11.75rem;
+		}
 
-    &--1 {
-      width: 9.5rem;
-    }
-  }
+		&--1 {
+			width: 9.5rem;
+		}
+	}
 
-  .itinerary-carousel__control {
-    width: 5.6rem;
-  }
+	.itinerary-carousel__control {
+		width: 5.6rem;
+	}
 }
 
 @media (min-width: 992px) {
-  .itinerary-carousel {
-    padding: 2.5rem 0 3rem;
-  }
+	.itinerary-carousel {
+		padding: 2.5rem 0 3rem;
+	}
 
-  .itinerary-carousel__inner {
-    width: min(100% - 3rem, 60rem);
-  }
+	.itinerary-carousel__inner {
+		width: min(100% - 3rem, 60rem);
+	}
 
-  .itinerary-carousel__slide {
-    &--0,
-    &--2 {
-      width: 14.5rem;
-    }
+	.itinerary-carousel__slide {
+		&--0,
+		&--2 {
+			width: 14.5rem;
+		}
 
-    &--1 {
-      width: 11.75rem;
-    }
-  }
+		&--1 {
+			width: 11.75rem;
+		}
+	}
 
-  .itinerary-carousel__control {
-    width: 6.7rem;
-  }
+	.itinerary-carousel__control {
+		width: 6.7rem;
+	}
 }
 
 @media (min-width: 1200px) {
-  .itinerary-carousel__inner {
-    width: min(100% - 3rem, 70rem);
-  }
+	.itinerary-carousel__inner {
+		width: min(100% - 3rem, 70rem);
+	}
 
-  .itinerary-carousel__slide {
-    &--0,
-    &--2 {
-      width: 16.8rem;
-    }
+	.itinerary-carousel__slide {
+		&--0,
+		&--2 {
+			width: 16.8rem;
+		}
 
-    &--1 {
-      width: 13.5rem;
-    }
-  }
+		&--1 {
+			width: 13.5rem;
+		}
+	}
 }
 
 @media (min-width: 1440px) {
-  .itinerary-carousel__inner {
-    width: min(100% - 3rem, 78rem);
-  }
+	.itinerary-carousel__inner {
+		width: min(100% - 3rem, 78rem);
+	}
 
-  .itinerary-carousel__slide {
-    &--0,
-    &--2 {
-      width: 19rem;
-    }
+	.itinerary-carousel__slide {
+		&--0,
+		&--2 {
+			width: 19rem;
+		}
 
-    &--1 {
-      width: 15rem;
-    }
-  }
+		&--1 {
+			width: 15rem;
+		}
+	}
 }
 
 @media (min-width: 1920px) {
-  .itinerary-carousel {
-    padding: 3rem 0 3.5rem;
-  }
+	.itinerary-carousel {
+		padding: 3rem 0 3.5rem;
+	}
 
-  .itinerary-carousel__inner {
-    width: min(100% - 3rem, 90rem);
-    padding-bottom: 2rem;
-  }
+	.itinerary-carousel__inner {
+		width: min(100% - 3rem, 90rem);
+		padding-bottom: 2rem;
+	}
 
-  .itinerary-carousel__slide {
-    &--0,
-    &--2 {
-      width: 21.25rem;
-    }
+	.itinerary-carousel__slide {
+		&--0,
+		&--2 {
+			width: 21.25rem;
+		}
 
-    &--1 {
-      width: 16.8rem;
-    }
-  }
+		&--1 {
+			width: 16.8rem;
+		}
+	}
 
-  .itinerary-carousel__control {
-    width: 7.85rem;
-  }
+	.itinerary-carousel__control {
+		width: 7.85rem;
+	}
+}
+
+// ── Clickable slide cursor ────────────────────────────────────────
+.itinerary-carousel__slide--clickable {
+	cursor: zoom-in;
+}
+
+// ── Lightbox ─────────────────────────────────────────────────────
+.carousel-lightbox {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.88);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	// Close button — top-right corner
+	&__close {
+		position: absolute;
+		top: 1.25rem;
+		right: 1.25rem;
+		z-index: 1001;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 2.75rem;
+		height: 2.75rem;
+		padding: 0;
+
+		background: rgba(255, 255, 255, 0.15);
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+
+		transition: background 0.2s ease;
+
+		&:hover,
+		&:focus-visible {
+			background: rgba(255, 255, 255, 0.3);
+			outline: none;
+		}
+
+		img {
+			display: block;
+			width: 1.5rem;
+			height: 1.5rem;
+			object-fit: contain;
+			filter: brightness(0) invert(1); // make the cross white
+		}
+	}
+
+	// Image wrapper fills the viewport with padding so it doesn't touch edges
+	&__img-wrap {
+		position: relative;
+		width: min(92vw, 1200px);
+		height: min(88vh, 900px);
+	}
 }
