@@ -62,6 +62,19 @@
 		line-height: 1.35;
 	}
 
+	.discover-svg {
+		// ── Adjust size and position here ─────────────────────────
+		width: 100%; // ← image width
+		margin-top: 0.3rem; // ← gap below the title
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+
 	.photo {
 		width: 100%;
 
