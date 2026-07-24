@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Hero = () => {
   return (
     <section className="hero-section">
@@ -20,14 +22,14 @@ const Hero = () => {
               </p>
               <p className="kicker">India is ready to...</p>
               <h3 className="headline">Change Your Life.</h3>
-              <div className="bubble">
-                <p className="mission">
-                  We offer transformative journeys accessible to everyone,
-                  designed to help you reconnect with your true self through
-                  direct experience. We believe in community living, connection
-                  with Mother Nature, and inner contact with the sacred places
-                  of India.
-                </p>
+              <div className="hero-circle">
+                <Image
+                  src="/assets/homepage-circle.svg"
+                  alt="Journey Within circle"
+                  width={400}
+                  height={400}
+                  priority
+                />
               </div>
               <div className="map" aria-hidden="true" />
             </section>
