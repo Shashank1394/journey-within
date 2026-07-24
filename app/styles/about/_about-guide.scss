@@ -62,6 +62,7 @@
     flex: 0 0 38%;
     max-width: 38%;
     align-self: flex-end;
+    transform: translate(1rem, -1rem);
 
     img {
       display: block;
@@ -123,6 +124,13 @@
     &__copy p {
       font-size: 1.1rem;
     }
+
+    &__photo {
+      flex: 0 0 40%;
+      max-width: 40%;
+      align-self: flex-end;
+      transform: translate(1rem, -4rem);
+    }
   }
 }
 
@@ -174,7 +182,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
   .about-guide {
     &__title {
       font-size: 4.8rem;
@@ -186,6 +194,10 @@
 
     &__copy p {
       font-size: 1.8rem;
+    }
+
+    &__photo {
+      transform: translate(1rem, -2rem);
     }
   }
 }
