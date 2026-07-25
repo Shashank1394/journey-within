@@ -180,6 +180,21 @@
       line-height: 1.7;
     }
 
+    .hero-circle {
+      // ── Adjust these to reposition / resize the circle ──────────
+      position: relative; // change to absolute for free placement
+      z-index: 3;
+      width: 350px;
+      margin: 2.5rem 0 0 14rem;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
     .map {
       width: 560px;
       left: -7rem;
@@ -233,6 +248,21 @@
 
     .mission {
       font-size: 1.2rem;
+    }
+
+    .hero-circle {
+      // ── Adjust these to reposition / resize the circle ──────────
+      position: relative; // change to absolute for free placement
+      z-index: 3;
+      width: 500px;
+      margin: 2.5rem 0 0 20rem;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
 
     .map {
@@ -289,6 +319,21 @@
 
     .mission {
       font-size: 1.8rem;
+    }
+
+    .hero-circle {
+      // ── Adjust these to reposition / resize the circle ──────────
+      position: relative; // change to absolute for free placement
+      z-index: 3;
+      width: 500px;
+      margin: 2.5rem 0 0 20rem;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
 
     .map {
@@ -356,6 +401,21 @@
       font-size: 1.8rem;
       margin-top: 6rem;
       // margin-right: 16rem;
+    }
+
+    .hero-circle {
+      // ── Adjust these to reposition / resize the circle ──────────
+      position: relative; // change to absolute for free placement
+      z-index: 3;
+      width: 700px;
+      margin: 14.5rem 0 0 20rem;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
 
     .map {
