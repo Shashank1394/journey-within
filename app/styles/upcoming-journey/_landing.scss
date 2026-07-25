@@ -67,7 +67,7 @@
     &__preview {
       position: absolute;
       z-index: 20;
-      width: clamp(360px, 28vw, 280px);
+      width: clamp(300px, 28vw, 280px);
 
       opacity: 0;
       pointer-events: none;
@@ -150,6 +150,26 @@
     font-weight: 700;
     line-height: 1.15;
     z-index: 10;
+  }
+}
+
+@media (min-width: 390px) {
+  .landing {
+    .pin {
+      &__preview {
+        width: clamp(360px, 28vw, 280px);
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .landing {
+    .pin {
+      &__preview {
+        width: clamp(460px, 28vw, 280px);
+      }
+    }
   }
 }
 
