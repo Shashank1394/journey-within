@@ -67,7 +67,7 @@
     &__preview {
       position: absolute;
       z-index: 20;
-      width: clamp(170px, 28vw, 280px);
+      width: clamp(360px, 28vw, 280px);
 
       opacity: 0;
       pointer-events: none;
@@ -98,14 +98,14 @@
       }
 
       &--himalaya {
-        top: 5%;
-        left: 44%;
+        top: 36%;
+        left: 15%;
       }
 
-      &--tamilnadu {
-        top: 56%;
-        left: 40%;
-      }
+      // &--tamilnadu {
+      //   top: 56%;
+      //   left: 40%;
+      // }
     }
 
     &--himalaya {
@@ -113,10 +113,10 @@
       top: 22%;
     }
 
-    &--tamilnadu {
-      left: 20%;
-      top: 60%;
-    }
+    // &--tamilnadu {
+    //   left: 20%;
+    //   top: 60%;
+    // }
   }
 
   .title {
@@ -192,16 +192,16 @@
 
     .pin {
       &__preview {
-        width: clamp(420px, 24vw, 380px);
+        width: clamp(660px, 24vw, 380px);
 
         &--himalaya {
-          top: 5%;
-          left: 44%;
+          top: 36%;
+          left: 28%;
         }
-        &--tamilnadu {
-          top: 67%;
-          left: 37%;
-        }
+        // &--tamilnadu {
+        //   top: 67%;
+        //   left: 37%;
+        // }
       }
     }
   }
@@ -237,22 +237,22 @@
         left: 20%;
         top: 22%;
       }
-      &--tamilnadu {
-        left: 20%;
-        top: 56%;
-      }
+      // &--tamilnadu {
+      //   left: 20%;
+      //   top: 56%;
+      // }
 
       &__preview {
-        width: clamp(560px, 24vw, 380px);
+        width: clamp(760px, 24vw, 380px);
 
         &--himalaya {
-          top: 5%;
-          left: 44%;
+          top: 36%;
+          left: 28%;
         }
-        &--tamilnadu {
-          top: 67%;
-          left: 37%;
-        }
+        // &--tamilnadu {
+        //   top: 67%;
+        //   left: 37%;
+        // }
       }
     }
   }
@@ -288,21 +288,36 @@
         left: 20%;
         top: 22%;
       }
-      &--tamilnadu {
-        left: 20%;
-        top: 56%;
-      }
+      // &--tamilnadu {
+      //   left: 20%;
+      //   top: 56%;
+      // }
 
       &__preview {
-        width: clamp(960px, 24vw, 380px);
+        width: clamp(860px, 24vw, 380px);
 
         &--himalaya {
-          top: 4%;
-          left: 44%;
+          top: 36%;
+          left: 28%;
         }
-        &--tamilnadu {
-          top: 67%;
-          left: 38%;
+        // &--tamilnadu {
+        //   top: 67%;
+        //   left: 38%;
+        // }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .landing {
+    .pin {
+      &__preview {
+        width: clamp(1160px, 24vw, 380px);
+
+        &--himalaya {
+          top: 36%;
+          left: 28%;
         }
       }
     }
