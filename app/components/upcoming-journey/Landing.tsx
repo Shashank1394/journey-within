@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Landing = () => {
   const [himalayaVisible, setHimalayaVisible] = useState(false);
@@ -121,13 +122,15 @@ const Landing = () => {
 
           {/* Himalaya pin */}
           <div ref={pinRef} className="pin pin--himalaya">
-            <Image
-              src="/assets/upcoming-journey/mountains.png"
-              alt="Himalaya mountains"
-              width={180}
-              height={130}
-              className="pin__image"
-            />
+            <Link href="/itinerary" aria-label="View Himalaya journey">
+              <Image
+                src="/assets/upcoming-journey/mountains.png"
+                alt="Himalaya mountains"
+                width={180}
+                height={130}
+                className="pin__image"
+              />
+            </Link>
           </div>
 
           {/* Preview */}
@@ -142,23 +145,25 @@ const Landing = () => {
                 : undefined
             }
           >
-            <Image
-              src="/assets/upcoming-journey/himalaya-mobile.png"
-              alt="Himalaya destination"
-              width={320}
-              height={220}
-              className="pin__preview-img pin__preview-img--mobile"
-            />
+            <Link href="/itinerary" aria-label="View Himalaya journey">
+              <Image
+                src="/assets/upcoming-journey/himalaya-mobile.png"
+                alt="Himalaya destination"
+                width={320}
+                height={220}
+                className="pin__preview-img pin__preview-img--mobile"
+              />
 
-            <Image
-              src="/assets/upcoming-journey/himalaya.png"
-              alt="Himalaya destination"
-              width={800}
-              height={560}
-              sizes="(max-width: 767px) 0px, (max-width: 991px) 28vw, 24vw"
-              quality={90}
-              className="pin__preview-img pin__preview-img--desktop"
-            />
+              <Image
+                src="/assets/upcoming-journey/himalaya.png"
+                alt="Himalaya destination"
+                width={800}
+                height={560}
+                sizes="(max-width: 767px) 0px, (max-width: 991px) 28vw, 24vw"
+                quality={90}
+                className="pin__preview-img pin__preview-img--desktop"
+              />
+            </Link>
           </div>
         </div>
 
