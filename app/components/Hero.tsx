@@ -32,14 +32,12 @@ const Hero = () => {
 
     gsap.to(path, {
       strokeDashoffset: 0,
-      duration: 3,
-      ease: "power2.out",
+      duration: 3.5,
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: circleRef.current,
         start: "30% 90%",
-        toggleActions: "play none none none",
         once: true,
-        markers: false, // Change to true while debugging
       },
     });
   }, []);
