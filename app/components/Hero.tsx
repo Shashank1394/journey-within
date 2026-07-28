@@ -28,12 +28,14 @@ const Hero = () => {
     gsap.set(path, {
       strokeDasharray: length,
       strokeDashoffset: length,
+      opacity: 0.2,
     });
 
     gsap.to(path, {
       strokeDashoffset: 0,
-      duration: 3.5,
-      ease: "power1.inOut",
+      opacity: 1,
+      duration: 3.8,
+      ease: "sine.inOut",
       scrollTrigger: {
         trigger: circleRef.current,
         start: "30% 90%",
