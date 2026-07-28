@@ -35,7 +35,7 @@ const Hero = () => {
       strokeDashoffset: 0,
       opacity: 1,
       duration: 3.8,
-      ease: "sine.inOut",
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: circleRef.current,
         start: "30% 90%",
