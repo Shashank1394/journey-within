@@ -1,8 +1,49 @@
 "use client";
 
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import HomepageCircle from "../../animated-assets/homepage-circle.svg";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Hero = () => {
+  const circleRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!circleRef.current) return;
+
+    const path = circleRef.current.querySelector(
+      'path[class*="circle-path"]',
+    ) as SVGPathElement | null;
+
+    if (!path) {
+      console.warn("Circle path not found.");
+      return;
+    }
+
+    const length = path.getTotalLength();
+
+    gsap.set(path, {
+      strokeDasharray: length,
+      strokeDashoffset: length,
+    });
+
+    gsap.to(path, {
+      strokeDashoffset: 0,
+      duration: 3,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: circleRef.current,
+        start: "30% 90%",
+        toggleActions: "play none none none",
+        once: true,
+        markers: false, // Change to true while debugging
+      },
+    });
+  }, []);
+
   return (
     <section className="hero-section">
       <div className="container">
@@ -18,7 +59,7 @@ const Hero = () => {
               <p className="copy">
                 In a balance of wild nature, authentic connections, and inner
                 exploration, you will come into contact with the most joyful
-                part of yourself
+                part of yourself.
               </p>
 
               <p className="copy accent">
@@ -30,7 +71,7 @@ const Hero = () => {
 
               <h3 className="headline">Change Your Life.</h3>
 
-              <div className="hero-circle">
+              <div className="hero-circle" ref={circleRef}>
                 <HomepageCircle className="circle-svg" />
               </div>
 
