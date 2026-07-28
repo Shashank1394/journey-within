@@ -25,11 +25,15 @@ export default function CarouselModal({ slides }: Props) {
 		return () => window.removeEventListener("keydown", handler);
 	}, [open, close]);
 
-	// Lock body scroll
+	// Lock body scroll and hide navbar
 	useEffect(() => {
-		document.body.style.overflow = open ? "hidden" : "";
+		if (open) {
+			document.body.classList.add("scroll-locked", "modal-open");
+		} else {
+			document.body.classList.remove("scroll-locked", "modal-open");
+		}
 		return () => {
-			document.body.style.overflow = "";
+			document.body.classList.remove("scroll-locked", "modal-open");
 		};
 	}, [open]);
 

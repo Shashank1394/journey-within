@@ -2,32 +2,48 @@
 @use "styles/index";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html,
 body {
-  min-height: 100%;
-  overflow-x: clip;
-  background-color: #f3f1e8;
+	min-height: 100%;
+	overflow-x: clip;
+	background-color: #f3f1e8;
 }
 
 body {
-  background-image: url("/assets/websiteBG.webp");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  font-family: var(--font-coming-soon), "Comic Neue", cursive;
+	background-image: url("/assets/websiteBG.webp");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	font-family: var(--font-coming-soon), "Comic Neue", cursive;
+
+	&.scroll-locked {
+		overflow: hidden;
+		/* iOS Safari needs this to prevent scroll on the body */
+		position: fixed;
+		width: 100%;
+	}
+
+	// Hide all navbars when a modal is open
+	&.modal-open {
+		.navbar-background,
+		.video-hero__navbar,
+		.sticky-navbar {
+			display: none !important;
+		}
+	}
 }
 
 // Reduce Bootstrap container margins on large displays
 @media (min-width: 1920px) {
-  .container,
-  .container-xxl {
-    max-width: 1600px;
-  }
+	.container,
+	.container-xxl {
+		max-width: 1600px;
+	}
 }

@@ -228,11 +228,10 @@
 
 // ── Gallery button ────────────────────────────────────────────────
 .itinerary-hero__gallery-btn {
-	position: relative;
-	z-index: 1;
-	display: flex;
-	justify-content: center;
-	margin-top: 1rem;
+	position: absolute;
+	bottom: -6%; // ← move up/down
+	right: 2%; // ← move left/right
+	z-index: 2;
 }
 
 .carousel-open-btn {

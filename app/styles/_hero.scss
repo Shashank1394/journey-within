@@ -1,3 +1,9 @@
+@keyframes draw-circle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .hero {
   position: relative;
   overflow: visible;
@@ -91,17 +97,29 @@
   }
 
   .hero-circle {
-    // ── Adjust these to reposition / resize the circle ──────────
-    position: relative; // change to absolute for free placement
+    position: relative;
     z-index: 3;
-    width: 200px; // ← image size
-    margin: 0.5rem 0 0 auto; // ← push right; change margin-left for x, margin-top for y
+    width: 200px;
+    margin: 0.5rem 0 0 auto;
 
-    img {
+    .circle-svg {
       display: block;
       width: 100%;
       height: auto;
-      object-fit: contain;
+    }
+
+    /* Target the SVG path whose class contains "circle-path" */
+    path[class*="circle-path"] {
+      fill: none;
+      stroke: #000;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+
+      stroke-dasharray: 1400;
+      stroke-dashoffset: 1400;
+
+      animation: draw-circle 2.5s ease forwards;
     }
   }
 
