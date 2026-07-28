@@ -1,6 +1,6 @@
-"use client";
-
 import Image from "next/image";
+import CarouselModalServer from "./CarouselModalServer";
+import { Suspense } from "react";
 
 const ItineraryHero = () => {
 	return (
@@ -36,6 +36,13 @@ const ItineraryHero = () => {
 									width={800}
 									height={300}
 								/>
+							</div>
+
+							{/* Gallery button — opens carousel modal */}
+							<div className="itinerary-hero__gallery-btn">
+								<Suspense fallback={null}>
+									<CarouselModalServer />
+								</Suspense>
 							</div>
 						</div>
 					</div>
