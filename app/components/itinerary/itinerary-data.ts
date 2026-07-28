@@ -80,7 +80,7 @@ const itineraryDays: ItineraryDay[] = [
     ],
     layout: {
       minHeight: "31rem",
-      text: { ...leftText.text, y: "-30rem", x: "2rem" },
+      text: { ...leftText.text, maxWidth: "26rem", y: "-30rem", x: "2rem" },
       image: { ...leftText.image, maxWidth: "38rem", y: "-35rem" },
     },
   },
@@ -111,7 +111,7 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "31rem",
       ...rightText,
-      text: { ...rightText.text, x: "-2rem", y: "-32rem" },
+      text: { ...rightText.text, maxWidth: "30rem", x: "-2rem", y: "-32rem" },
       image: {
         ...rightText.image,
         maxWidth: "34rem",
@@ -341,7 +341,7 @@ const itineraryDays: ItineraryDay[] = [
     ],
     layout: {
       minHeight: "27rem",
-      text: { ...rightText.text, x: "-5rem", y: "-112rem" },
+      text: { ...rightText.text, maxWidth: "22rem", x: "-5rem", y: "-112rem" },
       image: { ...rightText.image, maxWidth: "150%", x: "3rem", y: "-128rem" },
     },
   },
@@ -385,14 +385,14 @@ const itineraryDays: ItineraryDay[] = [
     ],
     layout: {
       minHeight: "28rem",
-      text: { ...rightText.text, x: "-20rem", y: "-148rem" },
-      image: { ...rightText.image, maxWidth: "100%", x: "-5rem", y: "-162rem" },
+      text: { ...rightText.text, x: "-18rem", y: "-148rem" },
+      image: { ...rightText.image, maxWidth: "100%", x: "-8rem", y: "-160rem" },
     },
   },
   //   --timeline-min-height: 28rem;
   //     --timeline-text-column: 6 / span 7;
   //     --timeline-text-width: 32rem;
-  //     --timeline-text-x: -20rem;
+  //     --timeline-text-x: -18rem;
   //     --timeline-text-y: -148rem;
   //     --timeline-text-align
   // right
@@ -400,8 +400,8 @@ const itineraryDays: ItineraryDay[] = [
   //     --timeline-text-justify: end;
   //     --timeline-image-column: 1 / span 5;
   //     --timeline-image-width: 100%;
-  //     --timeline-image-x: -5rem;
-  //     --timeline-image-y: -162rem;
+  //     --timeline-image-x: -8rem;
+  //     --timeline-image-y: -160rem;
   //     --timeline-image-justify: start;
   {
     id: 15,
@@ -412,8 +412,8 @@ const itineraryDays: ItineraryDay[] = [
     description: ["Return home from Rishikesh airport.", "Bye bye Himalayas!"],
     layout: {
       minHeight: "26rem",
-      text: { ...leftText.text, x: "25rem", y: "-170rem" },
-      image: { ...leftText.image, maxWidth: "70%", x: "0rem", y: "-180rem" },
+      text: { ...leftText.text, x: "20rem", y: "-170rem" },
+      image: { ...leftText.image, maxWidth: "70%", x: "0rem", y: "-175rem" },
     },
   },
   // --timeline-text-x: 25rem;
