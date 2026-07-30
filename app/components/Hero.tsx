@@ -21,6 +21,7 @@ const mapImages = [
 
 const Hero = () => {
   const circleRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!circleRef.current) return;
@@ -55,6 +56,35 @@ const Hero = () => {
     });
   }, []);
 
+  useEffect(() => {
+    if (!mapRef.current) return;
+
+    const numberedImages = mapRef.current.querySelectorAll(
+      ".map-image:not(.map-image--plane)",
+    );
+
+    const context = gsap.context(() => {
+      gsap.fromTo(
+        numberedImages,
+        { autoAlpha: 0, scale: 0.35, transformOrigin: "center" },
+        {
+          autoAlpha: 1,
+          scale: 1,
+          duration: 0.8,
+          stagger: 0.3,
+          ease: "back.out(1.7)",
+          scrollTrigger: {
+            trigger: mapRef.current,
+            start: "top 80%",
+            once: true,
+          },
+        },
+      );
+    }, mapRef);
+
+    return () => context.revert();
+  }, []);
+
   return (
     <section className="hero-section">
       <div className="container">
@@ -86,7 +116,7 @@ const Hero = () => {
                 <HomepageCircle className="circle-svg" />
               </div>
 
-              <div className="map" aria-hidden="true">
+              <div className="map" aria-hidden="true" ref={mapRef}>
                 {mapImages.map(({ name, src, width, height }) => (
                   <Image
                     className={`map-image map-image--${name}`}
