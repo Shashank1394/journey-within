@@ -3,10 +3,21 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 import HomepageCircle from "../../animated-assets/homepage-circle.svg";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const mapImages = [
+  { name: "1", src: "/assets/home/1.svg", width: 1127, height: 1096 },
+  { name: "2", src: "/assets/home/2.svg", width: 1088, height: 1096 },
+  { name: "3", src: "/assets/home/3.svg", width: 1074, height: 1096 },
+  { name: "4", src: "/assets/home/4.svg", width: 1127, height: 1096 },
+  { name: "5", src: "/assets/home/5.svg", width: 1113, height: 1096 },
+  { name: "6", src: "/assets/home/6.svg", width: 1059, height: 1096 },
+  { name: "plane", src: "/assets/home/plane.svg", width: 1890, height: 870 },
+] as const;
 
 const Hero = () => {
   const circleRef = useRef<HTMLDivElement>(null);
@@ -75,7 +86,19 @@ const Hero = () => {
                 <HomepageCircle className="circle-svg" />
               </div>
 
-              <div className="map" aria-hidden="true" />
+              <div className="map" aria-hidden="true">
+                {mapImages.map(({ name, src, width, height }) => (
+                  <Image
+                    className={`map-image map-image--${name}`}
+                    key={src}
+                    src={src}
+                    alt=""
+                    width={width}
+                    height={height}
+                    unoptimized
+                  />
+                ))}
+              </div>
             </section>
           </div>
         </div>

@@ -124,12 +124,63 @@
     width: 350px;
     margin: 0;
     aspect-ratio: 800 / 926;
-    background-image: url("/assets/hero-map-collage.webp");
+    background-image: url("/assets/india-map.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left bottom;
     z-index: 1;
     pointer-events: none;
+
+    // Adjust each image's top, left, and width here. Values are relative
+    // to the map, so they scale automatically as the map width changes.
+    .map-image {
+      position: absolute;
+      display: block;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .map-image--1 {
+      width: 14%;
+      top: 13%;
+      left: 25%;
+    }
+
+    .map-image--2 {
+      top: 25%;
+      left: 44%;
+      width: 19%;
+    }
+
+    .map-image--3 {
+      top: 46%;
+      left: 12%;
+      width: 18%;
+    }
+
+    .map-image--4 {
+      top: 53%;
+      left: 52%;
+      width: 20%;
+    }
+
+    .map-image--5 {
+      top: 69%;
+      left: 29%;
+      width: 18%;
+    }
+
+    .map-image--6 {
+      top: 75%;
+      left: 61%;
+      width: 17%;
+    }
+
+    .map-image--plane {
+      top: 4%;
+      left: 5%;
+      width: 90%;
+    }
   }
 }
 
@@ -509,14 +560,54 @@
     .mission {
       font-size: 2rem;
       margin-top: 6rem;
-      // margin-right: 16rem;
     }
 
     .map {
       width: 1220px;
       left: -22rem;
-      // top: -6rem;
       bottom: 5rem;
+
+      .map-image--1 {
+        width: 14%;
+        top: 13%;
+        left: 25%;
+      }
+
+      .map-image--2 {
+        width: 12%;
+        top: 23%;
+        left: 34%;
+      }
+
+      .map-image--3 {
+        width: 10%;
+        top: 37%;
+        left: 51%;
+      }
+
+      .map-image--4 {
+        width: 18%;
+        top: 48%;
+        left: 20%;
+      }
+
+      .map-image--5 {
+        width: 10%;
+        top: 66%;
+        left: 31%;
+      }
+
+      .map-image--6 {
+        width: 14%;
+        top: 69%;
+        left: 21%;
+      }
+
+      .map-image--plane {
+        width: 47%;
+        top: 23%;
+        left: -7%;
+      }
     }
   }
 }
