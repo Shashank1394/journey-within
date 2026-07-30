@@ -181,7 +181,8 @@
   // ── Privacy note ─────────────────────────────────────────────
   .privacy {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 0.6rem;
     margin-top: 1.25rem;
 
@@ -194,7 +195,6 @@
     &__icon {
       font-size: 1.1rem;
       flex-shrink: 0;
-      margin-top: 0.05rem;
     }
   }
 }
