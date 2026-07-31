@@ -229,8 +229,8 @@
 // ── Gallery button ────────────────────────────────────────────────
 .itinerary-hero__gallery-btn {
   position: absolute;
-  bottom: 4%;
-  right: 14%;
+  bottom: 3%;
+  right: 6%;
   z-index: 2;
 }
 
@@ -242,7 +242,7 @@
   display: block;
 
   // ── Adjust size here ─────────────────────────────────────────
-  width: clamp(160px, 30vw, 280px);
+  width: clamp(100px, 24vw, 280px);
 
   img {
     display: block;
@@ -253,6 +253,31 @@
 
   &:hover {
     opacity: 0.85;
+  }
+}
+
+@media (min-width: 768px) {
+  .itinerary-hero__gallery-btn {
+    right: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .itinerary-hero__gallery-btn {
+    right: 12%;
+    bottom: 4%;
+  }
+}
+
+// Preserve the existing 1920px-and-up placement and maximum gallery size.
+@media (min-width: 1920px) {
+  .itinerary-hero__gallery-btn {
+    right: 14%;
+    bottom: 4%;
+  }
+
+  .carousel-open-btn {
+    width: 280px;
   }
 }
 
