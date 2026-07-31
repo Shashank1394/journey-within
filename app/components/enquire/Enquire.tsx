@@ -2,8 +2,16 @@
 
 import { useState } from "react";
 
+type EnquiryForm = {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+};
+
 const Enquire = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<EnquiryForm>({
     name: "",
     email: "",
     phone: "",
