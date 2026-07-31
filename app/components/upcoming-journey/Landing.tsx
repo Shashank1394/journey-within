@@ -153,7 +153,8 @@ const Landing = () => {
                 height={220}
                 className="pin__preview-img pin__preview-img--mobile"
               />
-
+            </Link>
+            <Link href="/itinerary" aria-label="View Himalaya journey">
               <Image
                 src="/assets/upcoming-journey/himalaya.png"
                 alt="Himalaya destination"

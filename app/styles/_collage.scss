@@ -1,10 +1,15 @@
 .collage-section {
   margin-top: 2rem;
   overflow: visible;
+
+  a {
+    display: block;
+    width: 100%;
+  }
 }
 
 .collage {
   display: block;
-  width: min(100%, 1300px);
+  width: 100%;
   height: auto;
 }
