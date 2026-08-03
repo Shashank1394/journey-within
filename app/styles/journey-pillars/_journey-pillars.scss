@@ -1,14 +1,11 @@
 .journey-pillars-section {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .pillar {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-
-  gap: 2rem;
-  margin-bottom: 4rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -50,7 +47,7 @@
   &__image {
     position: relative;
 
-    width: 100%;
+    width: 90%;
     max-width: 280px;
     aspect-ratio: 1 / 1;
 
@@ -66,7 +63,7 @@
       margin-bottom: 0.5rem;
 
       font-family: var(--font-coming-soon), "Comic Neue", cursive;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 700;
       line-height: 1.1;
     }
@@ -75,8 +72,8 @@
       margin: 0;
 
       font-family: var(--font-coming-soon), "Comic Neue", cursive;
-      font-size: 0.8rem;
-      line-height: 1.2;
+      font-size: 0.59rem;
+      line-height: 1.3;
     }
   }
 }
@@ -131,7 +128,6 @@
 
       p {
         font-size: 2rem;
-        line-height: 1.05;
       }
     }
   }
