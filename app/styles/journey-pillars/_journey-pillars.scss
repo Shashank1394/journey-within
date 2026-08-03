@@ -122,12 +122,12 @@
 
     &__content {
       h3 {
-        font-size: 2.75rem;
+        font-size: 1.75rem;
         margin-bottom: 1rem;
       }
 
       p {
-        font-size: 2rem;
+        font-size: 1.25rem;
       }
     }
   }
@@ -156,7 +156,21 @@
 
     &__content {
       h3 {
-        font-size: 3rem;
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .pillar {
+    &__content {
+      h3 {
+        font-size: 2.7rem;
       }
 
       p {

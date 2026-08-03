@@ -3,23 +3,6 @@
   position: relative;
   padding: 3rem 0 5rem;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    z-index: -1;
-    width: 100vw;
-    transform: translateX(-50%);
-
-    background-image: url("/assets/enquire/bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    pointer-events: none;
-  }
-
   > .container {
     position: relative;
     z-index: 1;
@@ -187,7 +170,7 @@
     margin-top: 1.25rem;
 
     font-family: var(--font-coming-soon), "Comic Neue", cursive;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 400;
     color: #444;
     line-height: 1.4;
@@ -202,6 +185,23 @@
 @media (min-width: 768px) {
   .enquire-section {
     padding: 4rem 0 6rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      width: 100vw;
+      transform: translateX(-50%);
+
+      background-image: url("/assets/enquire/bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      pointer-events: none;
+    }
 
     .title {
       font-size: 3.8rem;
