@@ -23,10 +23,10 @@ const AboutGuide = () => {
 
               {/* Intro — full width, centred */}
               <p className="about-guide__intro">
-                Hello, my name is Riccardo, and I am a spiritual researcher
-                <br /> and traveller. Raised as an engineer at Ferrari, since
-                2022 I have devoted every ounce of my energy to the search for a
-                higher purpose.
+                Hello, my name is Riccardo, and I am a spiritual researcher and
+                traveller. Raised as an engineer at Ferrari, since 2022 I have
+                devoted every ounce of my energy to the search for a higher
+                purpose.
               </p>
 
               {/* Bottom — photo left, copy right */}

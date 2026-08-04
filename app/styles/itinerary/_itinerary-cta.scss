@@ -1,219 +1,219 @@
 .itinerary-cta-section {
-	padding: 2.5rem 0 3rem;
+  padding: 2.5rem 0 3rem;
 }
 
 .itinerary-cta {
-	&__map-col {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  &__map-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-	&__map {
-		width: 100%;
-		transform: scale(1.2);
+  &__map {
+    width: 100%;
+    transform: scale(1.2);
 
-		img {
-			display: block;
-			width: 100%;
-			height: auto;
-			object-fit: contain;
-		}
-	}
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
 
-	&__text-col {
-		display: flex;
-		align-items: center;
-	}
+  &__text-col {
+    display: flex;
+    align-items: center;
+  }
 
-	&__text {
-		width: 100%;
-		text-align: center;
-		transform: translateY(-0.25rem);
-	}
+  &__text {
+    width: 100%;
+    text-align: center;
+    transform: translateY(-0.25rem);
+  }
 
-	&__title {
-		margin: 0 0 1rem;
+  &__title {
+    margin: 0 0 1rem;
 
-		font-family: "Roca", "Times New Roman", serif;
-		font-size: 1.2rem;
-		font-weight: 700;
-		line-height: 1;
+    font-family: "Roca", "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
 
-		color: #f6c400;
+    color: #f6c400;
 
-		text-shadow:
-			-1px -1px 0 #ffecdc,
-			1px 1px 0 #07340c,
-			0 0 1px #07340c;
-	}
+    text-shadow:
+      -1px -1px 0 #ffecdc,
+      1px 1px 0 #07340c,
+      0 0 1px #07340c;
+  }
 
-	&__copy {
-		margin: 0 auto 1.4rem;
-		max-width: 21rem;
+  &__copy {
+    margin: 0 auto 1.4rem;
+    max-width: 21rem;
 
-		font-family: var(--font-coming-soon), "Comic Neue", cursive;
-		font-size: 0.82rem;
-		font-weight: 700;
-		line-height: 1.2;
-		color: #111;
+    font-family: var(--font-coming-soon), "Comic Neue", cursive;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111;
 
-		// Subtle faux-bold
-		text-shadow:
-			0.2px 0 0 #07340c,
-			-0.2px 0 0 #07340c,
-			0 0.2px 0 #07340c,
-			0 -0.2px 0 #07340c;
-	}
+    // Subtle faux-bold
+    text-shadow:
+      0.2px 0 0 #07340c,
+      -0.2px 0 0 #07340c,
+      0 0.2px 0 #07340c,
+      0 -0.2px 0 #07340c;
+  }
 
-	&__copy-svg {
-		// ── Adjust size and position here ───────────────────────────
-		width: 100%; // ← image width
-		margin: 0 auto 1.4rem; // ← gap above CTA link
+  &__copy-svg {
+    // ── Adjust size and position here ───────────────────────────
+    width: 100%; // ← image width
+    margin: 0 auto 1.4rem; // ← gap above CTA link
 
-		img {
-			display: block;
-			width: 100%;
-			height: auto;
-			object-fit: contain;
-		}
-	}
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
 
-	&__cta {
-		display: inline-block;
+  &__cta {
+    display: inline-block;
 
-		font-family: "Roca", "Times New Roman", serif;
-		font-size: 1.2rem;
-		font-weight: 700;
-		line-height: 1;
-		text-decoration: none;
+    font-family: "Roca", "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
 
-		color: #f6c400;
+    color: #f6c400;
 
-		text-shadow:
-			-1px -1px 0 #ffecdc,
-			1px 1px 0 #07340c,
-			0 0 1px #07340c;
+    text-shadow:
+      -1px -1px 0 #ffecdc,
+      1px 1px 0 #07340c,
+      0 0 1px #07340c;
 
-		transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
 
-		&:hover,
-		&:focus-visible {
-			opacity: 0.8;
-			color: #f6c400;
-		}
-	}
+    &:hover,
+    &:focus-visible {
+      opacity: 0.8;
+      color: #f6c400;
+    }
+  }
 }
 
 @media (min-width: 768px) {
-	.itinerary-cta-section {
-		padding: 3rem 0 4rem;
-	}
+  .itinerary-cta-section {
+    padding: 3rem 0 4rem;
+  }
 
-	.itinerary-cta {
-		&__text {
-			transform: translateY(-0.4rem);
-		}
+  .itinerary-cta {
+    &__text {
+      transform: translateY(-0.4rem);
+    }
 
-		&__title {
-			margin-bottom: 1.25rem;
-			font-size: 2.1rem;
+    &__title {
+      margin-bottom: 1.25rem;
+      font-size: 1.9rem;
 
-			text-shadow:
-				-2px -2px 0 #ffecdc,
-				2px 2px 0 #07340c,
-				0 0 2px #07340c;
-		}
+      text-shadow:
+        -2px -2px 0 #ffecdc,
+        2px 2px 0 #07340c,
+        0 0 2px #07340c;
+    }
 
-		&__copy {
-			margin-bottom: 1.6rem;
-			max-width: 29rem;
-			font-size: 1.05rem;
-			line-height: 1.25;
-		}
+    &__copy {
+      margin-bottom: 1.6rem;
+      max-width: 29rem;
+      font-size: 1.05rem;
+      line-height: 1.25;
+    }
 
-		&__cta {
-			font-size: 2¡rem;
+    &__cta {
+      font-size: 2¡rem;
 
-			text-shadow:
-				-2px -2px 0 #ffecdc,
-				2px 2px 0 #07340c,
-				0 0 2px #07340c;
-		}
-	}
+      text-shadow:
+        -2px -2px 0 #ffecdc,
+        2px 2px 0 #07340c,
+        0 0 2px #07340c;
+    }
+  }
 }
 
 @media (min-width: 992px) {
-	.itinerary-cta-section {
-		padding: 3.5rem 0 4.5rem;
-	}
+  .itinerary-cta-section {
+    padding: 3.5rem 0 4.5rem;
+  }
 
-	.itinerary-cta {
-		&__title {
-			margin-bottom: 1.5rem;
-			font-size: 2.75rem;
-		}
+  .itinerary-cta {
+    &__title {
+      margin-bottom: 1.5rem;
+      font-size: 2.5rem;
+    }
 
-		&__copy {
-			margin-bottom: 1.75rem;
-			max-width: 34rem;
-			font-size: 1.25rem;
-		}
+    &__copy {
+      margin-bottom: 1.75rem;
+      max-width: 34rem;
+      font-size: 1.25rem;
+    }
 
-		&__cta {
-			font-size: 2.75rem;
-		}
-	}
+    &__cta {
+      font-size: 2.4rem;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-	.itinerary-cta {
-		&__title {
-			font-size: 3.15rem;
-		}
+  .itinerary-cta {
+    &__title {
+      font-size: 3rem;
+    }
 
-		&__copy {
-			font-size: 1.4rem;
-		}
+    &__copy {
+      font-size: 1.4rem;
+    }
 
-		&__cta {
-			font-size: 3.15rem;
-		}
-	}
+    &__cta {
+      font-size: 2.8rem;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
-	.itinerary-cta {
-		&__title {
-			font-size: 3.4rem;
-		}
+  .itinerary-cta {
+    &__title {
+      font-size: 3.4rem;
+    }
 
-		&__copy {
-			font-size: 1.5rem;
-		}
+    &__copy {
+      font-size: 1.5rem;
+    }
 
-		&__cta {
-			font-size: 3.4rem;
-		}
-	}
+    &__cta {
+      font-size: 3.4rem;
+    }
+  }
 }
 
 @media (min-width: 1920px) {
-	.itinerary-cta-section {
-		padding: 4rem 0 5rem;
-	}
+  .itinerary-cta-section {
+    padding: 4rem 0 5rem;
+  }
 
-	.itinerary-cta {
-		&__title {
-			font-size: 4rem;
-		}
+  .itinerary-cta {
+    &__title {
+      font-size: 4rem;
+    }
 
-		&__copy {
-			font-size: 1.75rem;
-		}
+    &__copy {
+      font-size: 1.75rem;
+    }
 
-		&__cta {
-			font-size: 4rem;
-		}
-	}
+    &__cta {
+      font-size: 4rem;
+    }
+  }
 }

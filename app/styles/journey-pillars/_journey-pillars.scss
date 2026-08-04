@@ -135,16 +135,12 @@
 
 @media (min-width: 992px) {
   .journey-pillars-section {
-    padding: 0rem 0;
+    padding: 0rem 6rem;
   }
 
   .pillar {
-    gap: 6rem;
+    gap: 0rem;
     margin-bottom: 8rem;
-
-    &__visual {
-      min-height: 500px;
-    }
 
     &__number {
       font-size: 8rem;
@@ -162,6 +158,10 @@
       p {
         font-size: 1.5rem;
       }
+    }
+
+    &__image {
+      width: 50%;
     }
   }
 }
