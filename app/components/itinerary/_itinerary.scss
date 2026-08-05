@@ -15,9 +15,34 @@
 }
 
 .itinerary-scaled-days__canvas {
+	position: relative;
 	width: 1200px;
 	transform-origin: top left;
 	container-type: inline-size;
+}
+
+.timeline-svg {
+	position: absolute;
+
+	top: 13rem;
+	left: 16rem;
+
+	pointer-events: none;
+	overflow: visible;
+
+	z-index: 0;
+
+	transform-origin: top left;
+}
+
+.timeline-path {
+	fill: none;
+	// Hidden until GSAP sets strokeDasharray/strokeDashoffset on mount
+	stroke-dasharray: 1;
+	stroke-dashoffset: 1;
+
+	stroke-linecap: round;
+	stroke-linejoin: round;
 }
 
 .itinerary-scaled-days__canvas .timeline-item__heading {
@@ -98,6 +123,7 @@
 .timeline-item__list li {
 	margin: 0;
 }
+
 .timeline-item__list li::before {
 	content: "- ";
 }
