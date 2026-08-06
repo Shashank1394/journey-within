@@ -28,7 +28,7 @@ interface TimelinePathProps extends SVGProps<SVGSVGElement> {
 }
 
 const TimelinePath = forwardRef<SVGPathElement, TimelinePathProps>(
-  ({ pathRefs, ...props }) => {
+  ({ pathRefs, ...props }, _ref) => {
     return (
       <svg
         {...props}
@@ -61,7 +61,7 @@ const TimelinePath = forwardRef<SVGPathElement, TimelinePathProps>(
               stroke="#000"
               strokeWidth={2}
               strokeLinecap="round"
-              strokeDasharray="1 4"
+              strokeDasharray="1 8"
               fill="none"
               mask={`url(#timeline-mask-${i})`}
             />
