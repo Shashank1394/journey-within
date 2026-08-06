@@ -43,7 +43,7 @@ const TimelinePath = forwardRef<SVGPathElement, TimelinePathProps>(
           {TIMELINE_SUBPATHS.map((d, i) => (
             <mask id={`timeline-mask-${i}`} key={i}>
               <path
-                ref={pathRefs?.[i]} // <-- GSAP animates this one
+                ref={pathRefs?.[i]}
                 d={d}
                 stroke="white"
                 strokeWidth={12}
