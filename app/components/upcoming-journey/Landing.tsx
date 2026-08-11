@@ -1,9 +1,44 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Landing = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const previewRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!sectionRef.current || !previewRef.current) return;
+
+    const context = gsap.context(() => {
+      gsap.fromTo(
+        previewRef.current,
+        { autoAlpha: 0, y: 16, pointerEvents: "none" },
+        {
+          autoAlpha: 1,
+          y: 0,
+          pointerEvents: "auto",
+          duration: 2.65,
+          ease: "back.out(1.4)",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top",
+            once: true,
+          },
+        },
+      );
+    }, sectionRef);
+
+    return () => context.revert();
+  }, []);
+
   return (
-    <section className="landing">
+    <section className="landing" ref={sectionRef}>
       <div className="container">
         <div className="map">
           <Image
@@ -28,9 +63,7 @@ const Landing = () => {
           </div>
 
           {/* Preview */}
-          <div
-            className="pin__preview pin__preview--himalaya pin__preview--visible"
-          >
+          <div className="pin__preview pin__preview--himalaya" ref={previewRef}>
             <Link href="/itinerary" aria-label="View Himalaya journey">
               <Image
                 src="/assets/upcoming-journey/himalaya-mobile.png"
