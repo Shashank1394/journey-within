@@ -40,7 +40,7 @@ const itineraryDays: ItineraryDay[] = [
     ],
     layout: {
       minHeight: "31rem",
-      text: { ...leftText.text, maxWidth: "24rem", y: "-15%", x: "60%" },
+      text: { ...leftText.text, maxWidth: "24rem", y: "-15%", x: "10%" },
       image: { ...leftText.image, y: "-48%", x: "0%", maxWidth: "70%" },
     },
   },

@@ -71,7 +71,7 @@
     // ── Adjust size and position here ───────────────────────────
     position: relative; // change to absolute for free placement
     z-index: 1;
-    width: 80%; // ← image width
+    width: 100%; // ← image width
     margin: 0 auto; // ← centres horizontally
 
     img {
@@ -160,6 +160,10 @@
         inset: -100% 0% -100% -35%;
       }
     }
+
+    &__body-svg {
+      width: 90%;
+    }
   }
 }
 
@@ -229,8 +233,8 @@
 // ── Gallery button ────────────────────────────────────────────────
 .itinerary-hero__gallery-btn {
   position: absolute;
-  bottom: 3%;
-  right: 6%;
+  bottom: 0%;
+  right: 0%;
   z-index: 2;
 }
 
@@ -242,7 +246,7 @@
   display: block;
 
   // ── Adjust size here ─────────────────────────────────────────
-  width: clamp(100px, 24vw, 280px);
+  width: clamp(120px, 24vw, 280px);
 
   img {
     display: block;
@@ -256,28 +260,70 @@
   }
 }
 
+@media (min-width: 576px) {
+  .itinerary-hero__gallery-btn {
+    right: 3%;
+    bottom: 0%;
+  }
+
+  .carousel-open-btn {
+    width: 160px;
+  }
+}
+
 @media (min-width: 768px) {
   .itinerary-hero__gallery-btn {
-    right: 10%;
+    right: 8%;
+    bottom: 0%;
+  }
+
+  .carousel-open-btn {
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .itinerary-hero__gallery-btn {
+    right: 8%;
+    bottom: 0%;
+  }
+
+  .carousel-open-btn {
+    width: 260px;
   }
 }
 
 @media (min-width: 1200px) {
   .itinerary-hero__gallery-btn {
-    right: 12%;
-    bottom: 4%;
+    right: 6%;
+    bottom: 0%;
+  }
+
+  .carousel-open-btn {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .itinerary-hero__gallery-btn {
+    right: 6%;
+    bottom: 0%;
+  }
+
+  .carousel-open-btn {
+    width: 380px;
   }
 }
 
 // Preserve the existing 1920px-and-up placement and maximum gallery size.
 @media (min-width: 1920px) {
   .itinerary-hero__gallery-btn {
-    right: 14%;
-    bottom: 4%;
+    right: 5%;
+    bottom: 0%;
   }
 
   .carousel-open-btn {
-    width: 280px;
+    width: 480px;
   }
 }
 

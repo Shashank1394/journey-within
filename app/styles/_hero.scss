@@ -433,23 +433,26 @@
       max-width: 980px;
       font-size: 1.8rem;
       padding-left: 8rem;
+      top: 0rem;
     }
 
     .copy {
-      max-width: 760px;
+      max-width: 554px;
       font-size: 1.8rem;
       padding: 1.4rem 0;
+      top: 0rem;
     }
 
     .copy.accent {
       max-width: 400px;
       font-size: 1.8rem;
       margin-top: 0;
+      top: 0rem;
       padding: 0;
     }
 
     .kicker {
-      margin-top: 6rem;
+      margin-top: 2rem;
       margin-right: 1rem;
       font-size: 1.8rem;
     }
@@ -473,7 +476,7 @@
       position: relative; // change to absolute for free placement
       z-index: 3;
       width: 500px;
-      margin: 2.5rem 0 0 30rem;
+      margin: 2.5rem 0 0 14rem;
 
       img {
         display: block;
@@ -551,13 +554,15 @@
       text-align: left;
       left: 6rem;
       margin-right: 0;
+      top: 7rem;
     }
 
     .copy {
-      max-width: 992px;
+      max-width: 540px;
       font-size: 1.8rem;
       text-align: right;
       // top: -3rem;
+      top: 7rem;
     }
 
     .copy.accent {
@@ -565,18 +570,19 @@
       font-size: 1.8rem;
       text-align: right;
       // top: -3rem;
+      top: 7rem;
     }
 
     .kicker {
       margin-top: 10rem;
       //   margin-right: 1rem;
       font-size: 1.8rem;
-      top: 9rem;
+      top: 7rem;
     }
 
     .headline {
       font-size: 4.8rem;
-      top: 10rem;
+      top: 7rem;
     }
 
     .bubble {
@@ -671,24 +677,24 @@
     .intro {
       max-width: 1196px;
       font-size: 2.2rem;
-      //   padding-left: 3.2rem;
       text-align: left;
       left: -11.6rem;
       margin-right: 0;
+      top: 5rem;
     }
 
     .copy {
-      max-width: 1160px;
+      max-width: 840px;
       font-size: 2.2rem;
       text-align: right;
-      // top: -3rem;
+      top: 7rem;
     }
 
     .copy.accent {
       max-width: 520px;
       font-size: 2.2rem;
       text-align: right;
-      // top: -3rem;
+      top: 9rem;
     }
 
     .kicker {
