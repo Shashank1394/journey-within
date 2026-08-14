@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
@@ -22,6 +23,37 @@ const Footer = () => {
 								height={485}
 								className="footer-stamps"
 							/>
+							<div className="footer-social">
+								<a
+									href="https://wa.me/4917645617368"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Chat with us on WhatsApp">
+									<Image
+										src="/assets/wp-footer.png"
+										alt="WhatsApp"
+										width={60}
+										height={60}
+										className="footer-social__icon"
+									/>
+								</a>
+								<a
+									href="https://www.instagram.com/riccardoborelli__"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Follow us on Instagram">
+									<Image
+										src="/assets/insta-footer.png"
+										alt="Instagram"
+										width={60}
+										height={60}
+										className="footer-social__icon"
+									/>
+								</a>
+								<Link href="/enquire" className="footer-social__label">
+									Begin Your Journey
+								</Link>
+							</div>
 						</div>
 					</div>
 				</div>
