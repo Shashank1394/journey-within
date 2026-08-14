@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const Collage = () => {
@@ -7,14 +6,14 @@ const Collage = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 d-flex justify-content-center">
-            <Link href="/upcoming-journey">
-              <Image
-                src="/assets/hp-collage.webp"
-                alt="Hero Map Collage"
-                width={1300}
-                height={1000}
+            <Link href="/upcoming-journey" aria-label="View upcoming journeys">
+              <video
                 className="collage"
-                loading="eager"
+                src="/assets/jw-vid.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </Link>
           </div>
