@@ -166,6 +166,39 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .journey-pillars-section {
+    padding: 0rem 6rem;
+  }
+
+  .pillar {
+    gap: 0rem;
+    margin-bottom: 8rem;
+
+    &__number {
+      font-size: 8rem;
+    }
+
+    &__image {
+      max-width: 520px;
+    }
+
+    &__content {
+      h3 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.7rem;
+      }
+    }
+
+    &__image {
+      width: 60%;
+    }
+  }
+}
+
 @media (min-width: 1440px) {
   .pillar {
     &__content {
