@@ -14,7 +14,7 @@ const Discover = () => {
 
 							<div className="discover-svg">
 								<Image
-									src="/assets/about/abt-comp.svg"
+									src="/assets/about/abt-comp.png"
 									alt="These trips have been thought and designed for this moment of your life. A purpose-giving experience is what is needed to boost you into your next phase."
 									width={600}
 									height={200}
