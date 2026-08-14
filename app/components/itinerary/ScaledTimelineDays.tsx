@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
 const DESIGN_WIDTH = 1200;
 
 const HEIGHT_STOPS = [
-  { width: 400, height: 1650 },
+  { width: 400, height: 1700 },
   { width: 546, height: 2300 },
   { width: 768, height: 3200 },
   { width: 992, height: 4300 },
