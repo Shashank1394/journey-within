@@ -234,7 +234,7 @@ const itineraryDays: ItineraryDay[] = [
     ],
     layout: {
       minHeight: "28rem",
-      text: { ...rightText.text, maxWidth: "44rem", x: "-5rem", y: "-74rem" },
+      text: { ...rightText.text, maxWidth: "40rem", x: "-4rem", y: "-70rem" },
       image: { ...rightText.image, x: "-6rem", y: "-90rem", maxWidth: "22rem" },
     },
   },
@@ -260,7 +260,7 @@ const itineraryDays: ItineraryDay[] = [
     layout: {
       minHeight: "30rem",
       text: { ...leftText.text, maxWidth: "26rem", x: "2rem", y: "-96rem" },
-      image: { ...leftText.image, maxWidth: "65%", x: "-6rem", y: "-102rem" },
+      image: { ...leftText.image, maxWidth: "65%", x: "-6rem", y: "-100rem" },
     },
   },
   // --timeline-text-width: 31rem;
