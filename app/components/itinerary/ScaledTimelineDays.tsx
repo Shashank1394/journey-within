@@ -22,7 +22,7 @@ const HEIGHT_STOPS = [
   { width: 400, height: 1650 },
   { width: 546, height: 2300 },
   { width: 768, height: 3200 },
-  { width: 992, height: 4000 },
+  { width: 992, height: 4300 },
   { width: 1200, height: 5600 },
   { width: 1408, height: 6200 },
   { width: 1440, height: 6000 },
