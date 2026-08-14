@@ -1,57 +1,57 @@
 .footer-component {
-	width: 100%;
-	overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 
-	.footer-image-wrapper {
-		position: relative;
-		display: block;
-		line-height: 0; // collapse inline gap under the image
-	}
+  .footer-image-wrapper {
+    position: relative;
+    display: block;
+    line-height: 0; // collapse inline gap under the image
+  }
 
-	.footer-image {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
+  .footer-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-	.footer-stamps {
-		position: absolute;
-		right: 8%;
-		top: 50%;
-		transform: translateY(-58%);
-		width: clamp(70px, 18vw, 200px);
-		height: auto;
-		pointer-events: none;
-	}
+  .footer-stamps {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-58%);
+    width: clamp(70px, 18vw, 200px);
+    height: auto;
+    pointer-events: none;
+  }
 
-	.footer-social {
-		position: absolute;
-		bottom: 10%;
-		left: 2%;
-		display: flex;
-		align-items: center;
-		gap: clamp(4px, 0.8vw, 12px);
-		line-height: 1; // reset the wrapper's line-height: 0
+  .footer-social {
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    display: flex;
+    align-items: center;
+    gap: clamp(4px, 0.8vw, 12px);
+    line-height: 1; // reset the wrapper's line-height: 0
 
-		&__icon {
-			width: clamp(20px, 3.5vw, 48px);
-			height: auto;
-			display: block;
-			flex-shrink: 0;
-		}
+    &__icon {
+      width: clamp(20px, 3.5vw, 32px);
+      height: auto;
+      display: block;
+      flex-shrink: 0;
+    }
 
-		&__label {
-			font-family: var(--font-coming-soon), "Comic Neue", cursive;
-			font-size: clamp(0.6rem, 1.4vw, 1.3rem);
-			font-weight: 700;
-			color: #f3f1e8;
-			white-space: nowrap;
-			line-height: 1.2; // explicit — not inherited from wrapper
-			text-decoration: none;
+    &__label {
+      font-family: var(--font-coming-soon), "Comic Neue", cursive;
+      font-size: clamp(0.6rem, 1.4vw, 1.3rem);
+      font-weight: 700;
+      color: #f3f1e8;
+      white-space: nowrap;
+      line-height: 1.2; // explicit — not inherited from wrapper
+      text-decoration: none;
 
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }

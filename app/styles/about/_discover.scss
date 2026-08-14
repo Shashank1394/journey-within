@@ -19,9 +19,9 @@
       .discover-instagram-icon {
         position: absolute;
         // Bottom-left of the illustration, matching the screenshot
-        bottom: 17%;
+        bottom: 20%;
         right: -27%;
-        width: clamp(40px, 8%, 80px);
+        width: clamp(10px, 8%, 80px);
         height: auto;
         margin: 0; // reset the auto-margin from the generic img rule
       }
